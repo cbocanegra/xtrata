@@ -18,3 +18,8 @@ D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entidad\bin\Debug\E
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entidad\obj\Debug\ResolveAssemblyReference.cache
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entidad\obj\Debug\Emp_Entidad.dll
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entidad\obj\Debug\Emp_Entidad.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entidad\bin\Debug\Emp_Entidad.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entidad\bin\Debug\Emp_Entidad.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entidad\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entidad\obj\Debug\Emp_Entidad.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entidad\obj\Debug\Emp_Entidad.pdb

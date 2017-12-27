@@ -68,3 +68,20 @@ D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.dll
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.xml
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Datos.dll.config
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Datos.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Datos.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Datos.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entidad.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entity.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\IBM.Data.DB2.iSeries.DLL
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\MySql.Data.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entidad.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entity.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entity.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\obj\Debug\Emp_Datos.Resources.resources
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\obj\Debug\Emp_Datos.vbproj.GenerateResource.Cache
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\obj\Debug\Emp_Datos.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\obj\Debug\Emp_Datos.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\obj\Debug\Emp_Datos.pdb

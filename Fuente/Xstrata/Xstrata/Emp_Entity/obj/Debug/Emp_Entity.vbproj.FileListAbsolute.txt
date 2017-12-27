@@ -7,3 +7,12 @@ D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Em
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.dll
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.xml
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\bin\Debug\Emp_Entity.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\bin\Debug\Emp_Entity.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\bin\Debug\Emp_Entity.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\obj\Debug\Emp_Entity.Resources.resources
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\obj\Debug\Emp_Entity.vbproj.GenerateResource.Cache
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\obj\Debug\Emp_Entity.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\obj\Debug\Emp_Entity.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Entity\obj\Debug\Emp_Entity.pdb

@@ -85,3 +85,22 @@ D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\E
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.dll
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.xml
 D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Negocio.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Negocio.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Negocio.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Datos.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Entidad.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Entity.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\IBM.Data.DB2.iSeries.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\MySql.Data.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Datos.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Datos.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Entity.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Entity.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\bin\Debug\Emp_Entidad.pdb
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\obj\Debug\Emp_Negocio.Resources.resources
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\obj\Debug\Emp_Negocio.vbproj.GenerateResource.Cache
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\obj\Debug\Emp_Negocio.dll
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\obj\Debug\Emp_Negocio.xml
+D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Negocio\obj\Debug\Emp_Negocio.pdb
