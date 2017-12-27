@@ -1,0 +1,899 @@
+BODY
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	font: 69% "Lucida Grande" , Verdana, Lucida, Helvetica, Arial, sans-serif;
+	color: black;
+	padding-top: 0px;
+	background-color: white;
+}
+TABLE {
+	FONT-SIZE: 100%
+}
+
+A {
+	COLOR: #436976; BACKGROUND-COLOR: transparent; TEXT-DECORATION: UNDERLINE
+}
+/*
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; VERTICAL-ALIGN: middle; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}*/
+P {
+	MARGIN: 0.5em 0em 1em; LINE-HEIGHT: 1.5em
+}
+P A {
+	TEXT-DECORATION: underline
+}
+P A:visited {
+	COLOR: purple; BACKGROUND-COLOR: transparent
+}
+P A:active {
+	COLOR: red; BACKGROUND-COLOR: transparent
+}
+P IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; MARGIN: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+HR {
+	COLOR: #8cacbb; HEIGHT: 1px; BACKGROUND-COLOR: transparent
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #8cacbb 1px solid; FONT-FAMILY: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; BACKGROUND-COLOR: transparent
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #8cacbb 1px solid; FONT-FAMILY: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; BACKGROUND-COLOR: transparent
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #8cacbb 1px solid; FONT-FAMILY: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; BACKGROUND-COLOR: transparent
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #8cacbb 1px solid; FONT-FAMILY: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; BACKGROUND-COLOR: transparent
+}
+H5 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #8cacbb 1px solid; FONT-FAMILY: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; BACKGROUND-COLOR: transparent
+}
+H6 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 0px; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #8cacbb 1px solid; FONT-FAMILY: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; BACKGROUND-COLOR: transparent
+}
+H1 A {
+	COLOR: black! important
+}
+H2 A {
+	COLOR: black! important
+}
+H3 A {
+	COLOR: black! important
+}
+H4 A {
+	COLOR: black! important
+}
+H5 A {
+	COLOR: black! important
+}
+H6 A {
+	COLOR: black! important
+}
+H1 {
+	PADDING-RIGHT: 4em; FONT-SIZE: 160%
+}
+H2 {
+	FONT-SIZE: 150%
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 140%; BORDER-BOTTOM: medium none
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%; BORDER-BOTTOM: medium none
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; BORDER-BOTTOM: medium none
+}
+H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 85%; BORDER-BOTTOM: medium none
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-IMAGE: url(http://plone.org/bullet.gif); PADDING-BOTTOM: 0px; MARGIN: 0.5em 0px 0px 1.5em; LINE-HEIGHT: 1.5em; PADDING-TOP: 0px; LIST-STYLE-TYPE: square
+}
+OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.5em 0px 0px 1.5em; LINE-HEIGHT: 1.5em; PADDING-TOP: 0px
+}
+UL A {
+	TEXT-DECORATION: underline
+}
+OL A {
+	TEXT-DECORATION: underline
+}
+LI {
+	MARGIN-BOTTOM: 1em
+}
+DT {
+	FONT-WEIGHT: bold
+}
+DT A {
+	TEXT-DECORATION: underline
+}
+DD {
+	MARGIN-BOTTOM: 1em; LINE-HEIGHT: 1.5em
+}
+DD A {
+	TEXT-DECORATION: underline
+}
+DD.link A {
+	COLOR: black; TEXT-DECORATION: none
+}
+FIELDSET {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; MARGIN: 1em 0em; BORDER-LEFT: #8cacbb 1px solid; WIDTH: auto; LINE-HEIGHT: 1.5em; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid
+}
+LEGEND {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-SIZE: 90%; BACKGROUND: white; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em
+}
+FORM {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: 0px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+TEXTAREA {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; FONT: 110% "Courier New", Courier, monospace; BORDER-LEFT: #8cacbb 1px solid; WIDTH: 100%; COLOR: black; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: white
+}
+INPUT {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; VISIBILITY: visible; VERTICAL-ALIGN: middle; BORDER-LEFT: #8cacbb 1px solid; COLOR: black; BORDER-BOTTOM: #8cacbb 1px solid; FONT-FAMILY: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; BACKGROUND-COLOR: white
+}
+SELECT {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #8cacbb 1px solid; COLOR: black; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: white
+}
+abbr {
+	CURSOR: help; COLOR: black; BORDER-BOTTOM: black 1px dotted; BACKGROUND-COLOR: transparent
+}
+ACRONYM {
+	CURSOR: help; COLOR: black; BORDER-BOTTOM: black 1px dotted; BACKGROUND-COLOR: transparent
+}
+.explain {
+	CURSOR: help; COLOR: black; BORDER-BOTTOM: black 1px dotted; BACKGROUND-COLOR: transparent
+}
+Q {
+	FONT-SIZE: 120%; FONT-STYLE: italic; FONT-FAMILY: Times, "Times New Roman", serif
+}
+BLOCKQUOTE {
+	FONT-SIZE: 120%; FONT-STYLE: italic; FONT-FAMILY: Times, "Times New Roman", serif
+}
+CODE {
+	BORDER-RIGHT: #8cacbb 1px dashed; PADDING-RIGHT: 0.1em; BORDER-TOP: #8cacbb 1px dashed; PADDING-LEFT: 0.1em; FONT-SIZE: 120%; PADDING-BOTTOM: 0px; BORDER-LEFT: #8cacbb 1px dashed; COLOR: black; PADDING-TOP: 0px; BORDER-BOTTOM: #8cacbb 1px dashed; FONT-FAMILY: "Courier New", Courier, monospace; BACKGROUND-COLOR: #dfdfdf
+}
+PRE {
+	BORDER-RIGHT: #8cacbb 1px dashed; PADDING-RIGHT: 1em; BORDER-TOP: #8cacbb 1px dashed; PADDING-LEFT: 1em; FONT-SIZE: 120%; PADDING-BOTTOM: 1em; OVERFLOW: auto; BORDER-LEFT: #8cacbb 1px dashed; COLOR: black; PADDING-TOP: 1em; BORDER-BOTTOM: #8cacbb 1px dashed; FONT-FAMILY: "Courier New", Courier, monospace; BACKGROUND-COLOR: #dfdfdf
+}
+.pre A {
+	TEXT-DECORATION: underline
+}
+INS {
+	COLOR: green; TEXT-DECORATION: none
+}
+DEL {
+	COLOR: red; TEXT-DECORATION: line-through
+}
+.netscape4 {
+	DISPLAY: none
+}
+#visual-portal-wrapper {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#portal-logo {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://plone.org/logo.jpg) no-repeat; PADDING-BOTTOM: 0px; MARGIN: 0.75em 0em 0.75em 1.5em; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+#portal-logo A {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 219px; CURSOR: pointer; PADDING-TOP: 57px; BORDER-BOTTOM: 0px; HEIGHT: 57px; TEXT-DECORATION: none
+}
+#portal-skinswitcher {
+	
+}
+#portal-skinswitcher A {
+	DISPLAY: block; FLOAT: left
+}
+#portal-top {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: transparent
+}
+#portal-siteactions {
+	PADDING-RIGHT: 2em; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 3px; MARGIN: 1px 0px 0px; LINE-HEIGHT: normal; PADDING-TOP: 3px; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none; HEIGHT: auto; BACKGROUND-COLOR: transparent
+}
+#portal-siteactions LI {
+	DISPLAY: inline
+}
+#portal-siteactions LI A {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: white 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; TEXT-TRANSFORM: lowercase; BORDER-LEFT: white 1px solid; COLOR: #76797c; MARGIN-RIGHT: 0.2em; PADDING-TOP: 0.2em; BORDER-BOTTOM: white 1px solid; HEIGHT: auto; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+#portal-siteactions LI.selected A {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+#portal-siteactions LI A:hover {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+#portal-searchbox {
+	CLEAR: right; PADDING-RIGHT: 2em; PADDING-LEFT: 0px; Z-INDEX: 2; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 1.5em 0px 0px; TEXT-TRANSFORM: lowercase; PADDING-TOP: 0px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: transparent; TEXT-ALIGN: right
+}
+#portal-globalnav {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 2em; PADDING-BOTTOM: 0em; MARGIN: 0px; LINE-HEIGHT: normal; PADDING-TOP: 0em; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none; HEIGHT: auto; BACKGROUND-COLOR: transparent
+}
+#portal-globalnav LI {
+	DISPLAY: inline
+}
+#portal-globalnav LI A {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1.5em; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 1.5em; PADDING-BOTTOM: 0em; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; MARGIN-RIGHT: 0.5em; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px; HEIGHT: auto; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+#portal-globalnav LI.selected A {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; BORDER-BOTTOM: #dfdfdf 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+#portal-globalnav LI A:hover {
+	BORDER-LEFT-COLOR: #8cacbb; BORDER-BOTTOM-COLOR: #dfdfdf; COLOR: #436976; BORDER-TOP-COLOR: #8cacbb; BACKGROUND-COLOR: #dfdfdf; BORDER-RIGHT-COLOR: #8cacbb
+}
+#portal-personaltools {
+	PADDING-RIGHT: 3em; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 3em; PADDING-BOTTOM: 0em; MARGIN: 0px; TEXT-TRANSFORM: lowercase; COLOR: black; LINE-HEIGHT: 1.3em; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid; LIST-STYLE-TYPE: none; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: right
+}
+#portal-personaltools .portalUser {
+	PADDING-LEFT: 15px; BACKGROUND: url(http://plone.org/user.gif) no-repeat left center
+}
+#portal-personaltools .portalNotLoggedIn {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; COLOR: black; PADDING-TOP: 0px
+}
+#portal-personaltools LI {
+	DISPLAY: inline; PADDING-LEFT: 8px; BACKGROUND: url(http://plone.org/linkOpaque.gif) no-repeat left center; MARGIN-LEFT: 1em; COLOR: #436976
+}
+#portal-personaltools LI A {
+	COLOR: #436976; TEXT-DECORATION: none
+}
+.visualCaseSensitive {
+	TEXT-TRANSFORM: none
+}
+#portal-breadcrumbs {
+	PADDING-RIGHT: 2em; PADDING-LEFT: 2em; TEXT-TRANSFORM: lowercase; BORDER-BOTTOM: #8cacbb 1px solid
+}
+
+.addFavorite {
+	VERTICAL-ALIGN: bottom
+}
+.contentViews {
+	BORDER-RIGHT: #74ae0b 0px solid; BORDER-TOP: #74ae0b 0px solid; MARGIN-TOP: 2.1em; PADDING-LEFT: 1em; MARGIN-LEFT: 0px; BORDER-LEFT: #74ae0b 0px solid; LINE-HEIGHT: normal; BORDER-BOTTOM: #74ae0b 1px solid; LIST-STYLE-TYPE: none; BACKGROUND-COLOR: transparent
+}
+.contentViews LI {
+	DISPLAY: inline; PADDING-TOP: 0.5em
+}
+.contentViews LI A {
+	BORDER-RIGHT: #74ae0b 1px solid; PADDING-RIGHT: 1.5em; BORDER-TOP: #74ae0b 1px solid; PADDING-LEFT: 1.5em; Z-INDEX: 1; PADDING-BOTTOM: 0em; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #74ae0b 1px solid; COLOR: #578308; LINE-HEIGHT: normal; MARGIN-RIGHT: 0.5em; PADDING-TOP: 0em; BORDER-BOTTOM: #74ae0b 1px solid; HEIGHT: auto; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+.contentViews .selected A {
+	COLOR: #578308; BORDER-BOTTOM: #cde2a7 1px solid; BACKGROUND-COLOR: #cde2a7
+}
+.contentViews LI A:hover {
+	COLOR: #578308; BACKGROUND-COLOR: #cde2a7
+}
+.contentActions {
+	BORDER-RIGHT: #74ae0b 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 1em; Z-INDEX: 2; PADDING-BOTTOM: 0px; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #74ae0b 1px solid; COLOR: #578308; PADDING-TOP: 0px; HEIGHT: 1.2em; BACKGROUND-COLOR: #cde2a7; TEXT-ALIGN: right
+}
+.contentActions UL {
+	DISPLAY: inline; LIST-STYLE-IMAGE: none; MARGIN: 0px; COLOR: black; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.contentActions LI {
+	DISPLAY: inline; LIST-STYLE-IMAGE: none; MARGIN: 0px; COLOR: black; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.contentActions UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 1.2em; PADDING-TOP: 0px; HEIGHT: 1.2em
+}
+.contentActions LI {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: right center; PADDING-LEFT: 1em; Z-INDEX: 4; FLOAT: right; BACKGROUND-IMAGE: url(http://plone.org/arrowDownAlternative.gif); PADDING-BOTTOM: 0px; MARGIN: 0px 1em 0px 0px; BORDER-LEFT: #74ae0b 1px solid; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.menuPosition {
+	POSITION: relative
+}
+.actionSingular {
+	BACKGROUND-IMAGE: none! important
+}
+.actionItems LI {
+	BACKGROUND-IMAGE: none
+}
+.contentActions A {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #578308; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.contentActions .actionMenu {
+	BORDER-RIGHT: #74ae0b 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #74ae0b 1px; PADDING-LEFT: 0px; Z-INDEX: 5; RIGHT: -1px; BACKGROUND: #cde2a7; VISIBILITY: hidden; PADDING-BOTTOM: 0px; MARGIN: 1.2em 0px 0px; OVERFLOW: hidden; BORDER-LEFT: #74ae0b 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #74ae0b 1px solid; POSITION: absolute; TOP: 0px; HEIGHT: auto
+}
+.actionMenu LI {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; DISPLAY: inline; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: none; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+.actionMenu LI A {
+	PADDING-RIGHT: 0.5em; DISPLAY: block; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0px; MARGIN: 0.2em 0px; PADDING-TOP: 0px; WHITE-SPACE: nowrap
+}
+.actionMenu LI A:hover {
+	COLOR: white; BACKGROUND-COLOR: #74ae0b
+}
+.actionMenu .actionSeperator A {
+	BORDER-TOP: #74ae0b 1px solid; MARGIN-TOP: 0.2em; PADDING-TOP: 0.2em
+}
+.configlet .contentViews {
+	FONT-SIZE: 90%
+}
+#content {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 0px; MARGIN: 0em 0em 2em; PADDING-TOP: 0.13em
+}
+#content-news H1 {
+	MARGIN-BOTTOM: 1em
+}
+.newsItem {
+	MARGIN-BOTTOM: 1em; BORDER-BOTTOM: #8cacbb 1px solid
+}
+.newsContent {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; PADDING-TOP: 0px
+}
+.newsContent UL {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; LIST-STYLE-IMAGE: none; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.newsContent LI {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; LIST-STYLE-IMAGE: none; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.newsAbout {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; DISPLAY: block; PADDING-LEFT: 0px; FONT-SIZE: 85%; FLOAT: right; LIST-STYLE-IMAGE: none; PADDING-BOTTOM: 0px; COLOR: #76797c; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: right
+}
+.newsAbout LI {
+	DISPLAY: inline
+}
+.newsFooter {
+	
+}
+.newsFooter LI {
+	DISPLAY: inline; MARGIN: 0px 1em 0px 0px
+}
+.documentEditable {
+	PADDING-RIGHT: 2em! important; PADDING-LEFT: 2em! important; PADDING-BOTTOM: 1em! important; PADDING-TOP: 0em! important
+}
+.configlet .documentEditable {
+	PADDING-RIGHT: 0em! important; PADDING-LEFT: 0em! important; PADDING-BOTTOM: 0em! important; PADDING-TOP: 0em! important
+}
+.documentContent {
+	PADDING-RIGHT: 1em! important; PADDING-LEFT: 1em! important; FONT-SIZE: 110%; BACKGROUND: white; PADDING-BOTTOM: 2em! important; PADDING-TOP: 0em! important
+}
+.documentEditable .documentContent {
+	BORDER-RIGHT: #74ae0b 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #74ae0b 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #74ae0b 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #74ae0b 1px solid
+}
+.documentActions {
+	MARGIN: -1.5em 0px 2em
+}
+.documentActions UL {
+	CLEAR: right; FLOAT: right; MARGIN: 0px 0px 0.3em
+}
+.documentActions UL {
+	DISPLAY: inline; LIST-STYLE-IMAGE: none; LIST-STYLE-TYPE: none
+}
+.documentActions LI {
+	DISPLAY: inline; LIST-STYLE-IMAGE: none; LIST-STYLE-TYPE: none
+}
+.documentActions A {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; TEXT-DECORATION: none
+}
+.portalMessage {
+	BORDER-RIGHT: #ffa500 1px solid; PADDING-RIGHT: 1em; BACKGROUND-POSITION: 5px 50%; BORDER-TOP: #ffa500 1px solid; PADDING-LEFT: 3em; FONT-WEIGHT: bold; FONT-SIZE: 85%; BACKGROUND-IMAGE: url(http://plone.org/info_icon.gif); PADDING-BOTTOM: 0.5em; MARGIN: 1em 0em 0em; VERTICAL-ALIGN: middle; BORDER-LEFT: #ffa500 1px solid; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #ffa500 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffce7b
+}
+.system-message {
+	BORDER-RIGHT: #ffa500 1px solid; PADDING-RIGHT: 1em; BACKGROUND-POSITION: 5px 50%; BORDER-TOP: #ffa500 1px solid; PADDING-LEFT: 3em; FONT-WEIGHT: bold; FONT-SIZE: 85%; BACKGROUND-IMAGE: url(http://plone.org/info_icon.gif); PADDING-BOTTOM: 0.5em; MARGIN: 1em 0em 0em; VERTICAL-ALIGN: middle; BORDER-LEFT: #ffa500 1px solid; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #ffa500 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffce7b
+}
+#error-handling {
+	BORDER-RIGHT: #ffa500 1px solid; PADDING-RIGHT: 1em; BACKGROUND-POSITION: 5px 50%; BORDER-TOP: #ffa500 1px solid; PADDING-LEFT: 3em; FONT-WEIGHT: bold; FONT-SIZE: 85%; BACKGROUND-IMAGE: url(http://plone.org/info_icon.gif); PADDING-BOTTOM: 0.5em; MARGIN: 1em 0em 0em; VERTICAL-ALIGN: middle; BORDER-LEFT: #ffa500 1px solid; COLOR: black; PADDING-TOP: 0.5em; BORDER-BOTTOM: #ffa500 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffce7b
+}
+.portalMessage A {
+	COLOR: black; TEXT-DECORATION: underline
+}
+.documentDescription {
+	DISPLAY: block; FONT-WEIGHT: bold; MARGIN: 1em 0em; LINE-HEIGHT: 1.5em
+}
+.documentByLine {
+	CLEAR: both; FONT-WEIGHT: normal; FONT-SIZE: 85%; COLOR: #76797c; TEXT-ALIGN: right
+}
+.documentByLine A {
+	TEXT-DECORATION: underline
+}
+.productCredits {
+	CLEAR: both; FONT-WEIGHT: normal; FONT-SIZE: 85%; COLOR: #76797c; TEXT-ALIGN: right
+}
+.productCredits A {
+	TEXT-DECORATION: underline
+}
+#portal-footer {
+	PADDING-RIGHT: 0em; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 0em; FLOAT: none; PADDING-BOTTOM: 1em; MARGIN: 2em 0em 1em; PADDING-TOP: 0.5em; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: center
+}
+#portal-colophon {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; FLOAT: none; PADDING-BOTTOM: 1em; MARGIN: 0em 0em 2em; PADDING-TOP: 0.5em; TEXT-ALIGN: center
+}
+#portal-colophon UL {
+	DISPLAY: inline; COLOR: black; LIST-STYLE-TYPE: none; TEXT-DECORATION: none
+}
+#portal-colophon UL LI {
+	DISPLAY: inline; COLOR: black; LIST-STYLE-TYPE: none; TEXT-DECORATION: none
+}
+#portal-colophon UL LI A {
+	DISPLAY: inline; COLOR: black; LIST-STYLE-TYPE: none; TEXT-DECORATION: none
+}
+#portal-colophon UL LI {
+	PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; FONT-SIZE: 85%; PADDING-BOTTOM: 0.1em; MARGIN: 0px 0.25em; PADDING-TOP: 0.1em
+}
+.standalone {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 15px; FONT-SIZE: 85%; BACKGROUND: url(http://plone.org/linkOpaque.gif) #dfdfdf no-repeat 9px 1px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1px; TEXT-TRANSFORM: lowercase; CURSOR: pointer; PADDING-TOP: 1px
+}
+.documentEditable  .standalone {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 15px; FONT-SIZE: 85%; BACKGROUND: url(http://plone.org/linkOpaque.gif) #dfdfdf no-repeat 9px 1px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1px; TEXT-TRANSFORM: lowercase; CURSOR: pointer; PADDING-TOP: 1px
+}
+.context {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 15px; FONT-SIZE: 85%; BACKGROUND: url(http://plone.org/linkTransparent.gif) no-repeat 9px 1px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1px; TEXT-TRANSFORM: lowercase; CURSOR: pointer; PADDING-TOP: 1px
+}
+.documentEditable  .context {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 15px; FONT-SIZE: 85%; BACKGROUND: url(http://plone.org/linkTransparent.gif) no-repeat 9px 1px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1px; TEXT-TRANSFORM: lowercase; CURSOR: pointer; PADDING-TOP: 1px
+}
+.destructive {
+	BORDER-RIGHT: #ffa500 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ffa500 1px solid; PADDING-LEFT: 15px; FONT-SIZE: 85%; BACKGROUND: url(http://plone.org/linkTransparent.gif) #ffce7b no-repeat 9px 1px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1px; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #ffa500 1px solid; CURSOR: pointer; PADDING-TOP: 1px; BORDER-BOTTOM: #ffa500 1px solid
+}
+.documentEditable  .destructive {
+	BORDER-RIGHT: #ffa500 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ffa500 1px solid; PADDING-LEFT: 15px; FONT-SIZE: 85%; BACKGROUND: url(http://plone.org/linkTransparent.gif) #ffce7b no-repeat 9px 1px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1px; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #ffa500 1px solid; CURSOR: pointer; PADDING-TOP: 1px; BORDER-BOTTOM: #ffa500 1px solid
+}
+INPUT.searchButton {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 15px; FONT-SIZE: 100%; BACKGROUND: url(http://plone.org/search_icon.gif) white no-repeat 2px 1px; MARGIN-BOTTOM: 1px! important; PADDING-BOTTOM: 1px; TEXT-TRANSFORM: lowercase; CURSOR: pointer; PADDING-TOP: 1px
+}
+.noborder {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: 0px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: transparent
+}
+.documentEditable  .noborder {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: 0px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: transparent
+}
+.add {
+	
+}
+.documentEditable  .add {
+	
+}
+.quickSearch {
+	
+}
+.notify {
+	BORDER-RIGHT: #ffa500 1px solid; BORDER-TOP: #ffa500 1px solid; BORDER-LEFT: #ffa500 1px solid; BORDER-BOTTOM: #ffa500 1px solid
+}
+.documentEditable  .notify {
+	BORDER-RIGHT: #ffa500 1px solid; BORDER-TOP: #ffa500 1px solid; BORDER-LEFT: #ffa500 1px solid; BORDER-BOTTOM: #ffa500 1px solid
+}
+.field {
+	LEFT: 0px; MARGIN: 0px 1em 1em 0px; TOP: 0px
+}
+.field .field {
+	MARGIN: 1em 0px 0px
+}
+.field LABEL {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%
+}
+.fieldRequired {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 8px; BACKGROUND: url(http://plone.org/required.gif) no-repeat left center; PADDING-BOTTOM: 0px; COLOR: white; PADDING-TOP: 0px
+}
+.formHelp {
+	FONT-SIZE: 90%; MARGIN: 0px 0px 0.2em; COLOR: #76797c
+}
+.formHelp A {
+	TEXT-DECORATION: underline
+}
+.formHelp:hover {
+	CURSOR: default; COLOR: black
+}
+.formControls {
+	MARGIN: 1em 0px 0px
+}
+.error {
+	BORDER-RIGHT: #ffa500 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #ffa500 1px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; MARGIN: 0px 0px 1em; BORDER-LEFT: #ffa500 1px solid; WIDTH: 95%! important; PADDING-TOP: 1em; BORDER-BOTTOM: #ffa500 1px solid; BACKGROUND-COLOR: #ffce7b
+}
+.error .fieldRequired {
+	COLOR: #ffce7b
+}
+.card {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 1em; MARGIN: 1em; BORDER-LEFT: #8cacbb 1px solid; WIDTH: 110px; PADDING-TOP: 1em; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: center
+}
+.portrait {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 85%; PADDING-BOTTOM: 0.5em; MARGIN: 0.5em; BORDER-LEFT: #8cacbb 1px solid; WIDTH: 100px; PADDING-TOP: 1em; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: center
+}
+.portraitPhoto {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.listing {
+	FONT-SIZE: 85%; MARGIN: 1em 0em; BORDER-LEFT: #8cacbb 1px solid; BORDER-BOTTOM: #8cacbb 1px solid; BORDER-COLLAPSE: collapse
+}
+.stx TABLE {
+	FONT-SIZE: 85%; MARGIN: 1em 0em; BORDER-LEFT: #8cacbb 1px solid; BORDER-BOTTOM: #8cacbb 1px solid; BORDER-COLLAPSE: collapse
+}
+.listing TH {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 1em; FONT-WEIGHT: normal; BACKGROUND: #dfdfdf; PADDING-BOTTOM: 0em; TEXT-TRANSFORM: lowercase; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid
+}
+.stx TABLE TH {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 1em; FONT-WEIGHT: normal; BACKGROUND: #dfdfdf; PADDING-BOTTOM: 0em; TEXT-TRANSFORM: lowercase; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid
+}
+.listing .top {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 0em; BORDER-TOP: white 1px solid; PADDING-LEFT: 0em; PADDING-BOTTOM: 1em; BORDER-LEFT: white 1px solid; PADDING-TOP: 0em; TEXT-ALIGN: right! important
+}
+.listing .odd {
+	BACKGROUND-COLOR: transparent
+}
+.listing .even {
+	BACKGROUND-COLOR: #edf3fe
+}
+.listing .listingCheckbox {
+	TEXT-ALIGN: center
+}
+.listing TD {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 0em; PADDING-TOP: 0em; TEXT-ALIGN: left
+}
+.stx TABLE TD {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 0em; PADDING-TOP: 0em; TEXT-ALIGN: left
+}
+.listing A:hover {
+	TEXT-DECORATION: underline
+}
+.listing IMG {
+	VERTICAL-ALIGN: middle
+}
+UL.configlets {
+	LIST-STYLE-IMAGE: none; MARGIN: 1em; LIST-STYLE-TYPE: none
+}
+UL.configlets LI {
+	MARGIN-BOTTOM: 1em
+}
+UL.configlets LI A {
+	TEXT-DECORATION: none
+}
+UL.configlets LI LABEL {
+	FONT-WEIGHT: bold
+}
+UL.configletDetails {
+	LIST-STYLE-IMAGE: none; MARGIN: 0em 1em 1em 4em; LIST-STYLE-TYPE: none
+}
+UL.configletDetails LI {
+	DISPLAY: inline; MARGIN-BOTTOM: 1em
+}
+UL.configletDetails LI A {
+	TEXT-DECORATION: none
+}
+UL.configletDetails LI LABEL {
+	FONT-WEIGHT: bold
+}
+UL.visualNoMarker {
+	LIST-STYLE-IMAGE: none; MARGIN: 0.5em 0px 0px; LIST-STYLE-TYPE: none
+}
+OL.visualNoMarker {
+	LIST-STYLE-IMAGE: none; MARGIN: 0.5em 0px 0px; LIST-STYLE-TYPE: none
+}
+.stx TABLE P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.stx TABLE {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; BORDER-BOTTOM: #8cacbb 1px solid
+}
+.stx TABLE TD {
+	BORDER-BOTTOM: #8cacbb 1px solid
+}
+.portlet {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; PADDING-LEFT: 0px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 0px; BORDER-LEFT: medium none; PADDING-TOP: 0px; BORDER-BOTTOM: medium none
+}
+#region-content .portlet {
+	FONT-SIZE: 94%
+}
+.portlet H4 {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 0.3em; BORDER-TOP: #8cacbb 1px solid; DISPLAY: block; PADDING-LEFT: 1em; FONT-WEIGHT: normal; FONT-SIZE: 1em; PADDING-BOTTOM: 0em; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #8cacbb 1px solid; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.portlet H5 {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #8cacbb 1px solid; DISPLAY: inline; PADDING-LEFT: 1em; FONT-WEIGHT: normal; FONT-SIZE: 1em; PADDING-BOTTOM: 0em; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #8cacbb 1px solid; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid; WHITE-SPACE: nowrap; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #dfdfdf
+}
+.portlet H6 {
+	BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 0.3em; BORDER-TOP: #8cacbb 1px solid; DISPLAY: block; PADDING-LEFT: 1em; FONT-WEIGHT: normal; FONT-SIZE: 1em; PADDING-BOTTOM: 0em; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #8cacbb 1px solid; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.portletBody {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-LEFT: #8cacbb 1px solid; BORDER-BOTTOM: #8cacbb 1px solid; POSITION: relative; TOP: -1px
+}
+.portletDetails {
+	TEXT-ALIGN: right
+}
+.portletContent {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; PADDING-TOP: 1em
+}
+.portletAction {
+	DISPLAY: block; PADDING-LEFT: 0.3em; FLOAT: right; TEXT-TRANSFORM: none; BORDER-LEFT: #8cacbb 1px solid; WIDTH: 0.8em; TEXT-ALIGN: center
+}
+.portlet .even {
+	BACKGROUND-COLOR: #edf3fe
+}
+.portlet .odd {
+	BACKGROUND-COLOR: transparent
+}
+.portlet INPUT {
+	FONT-SIZE: 100%
+}
+.portletSyndication {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; DISPLAY: block; FONT-SIZE: 85%; FLOAT: left; BORDER-LEFT: #8cacbb 1px solid; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.portletMore {
+	DISPLAY: block; TEXT-ALIGN: right
+}
+.portletFooter {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; PADDING-TOP: 0.5em
+}
+.navIcon {
+	RIGHT: 20px; POSITION: relative
+}
+.navIconRoot {
+	RIGHT: 20px; POSITION: relative
+}
+.navItemText {
+	MARGIN-LEFT: -20px
+}
+.navRootItem {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 0.25em; BACKGROUND-POSITION: 0px 1px; BORDER-TOP: white 1px solid; DISPLAY: block; PADDING-LEFT: 20px; PADDING-BOTTOM: 0.2em; MARGIN: 1px 0px; BORDER-LEFT: white 1px solid; PADDING-TOP: 0.1em; BORDER-BOTTOM: white 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+.navItem {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 0.25em; BACKGROUND-POSITION: 0px 1px; BORDER-TOP: white 1px solid; DISPLAY: block; PADDING-LEFT: 20px; PADDING-BOTTOM: 0.2em; MARGIN: 1px 0px; BORDER-LEFT: white 1px solid; PADDING-TOP: 0.1em; BORDER-BOTTOM: white 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+.currentNavItem {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+#portlet-navigation-tree A:hover {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.navLevel1 {
+	MARGIN-LEFT: 0em
+}
+.navLevel2 {
+	MARGIN-LEFT: 1em
+}
+.navLevel3 {
+	MARGIN-LEFT: 2em
+}
+.navLevel4 {
+	MARGIN-LEFT: 3em
+}
+.navLevel5 {
+	MARGIN-LEFT: 4em
+}
+.navLevel6 {
+	MARGIN-LEFT: 4.5em
+}
+.navLevel7 {
+	MARGIN-LEFT: 5em
+}
+.navLevel8 {
+	MARGIN-LEFT: 5.5em
+}
+.portletNavigationTree {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-IMAGE: none; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 0.75em; LINE-HEIGHT: 1em; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.portletNavigationTreeItem {
+	MARGIN: 0px
+}
+.portletNavigationTreeItem A {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0px 3px; BORDER-TOP: white 1px solid; DISPLAY: block; PADDING-LEFT: 1.75em; PADDING-BOTTOM: 0.5em; BORDER-LEFT: white 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: white 1px solid; BACKGROUND-REPEAT: no-repeat; TEXT-DECORATION: none
+}
+.portletNavigationTreeItem A:hover {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.currentNavItem {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; BORDER-LEFT: #8cacbb 1px solid; COLOR: #436976; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.portletNavigationLevel0 {
+	MARGIN: 0px
+}
+.comment {
+	BORDER-RIGHT: #8cacbb 1px dashed; PADDING-RIGHT: 1em; BORDER-TOP: #8cacbb 1px dashed; PADDING-LEFT: 1em; BACKGROUND: #edf3fe; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 0.5em; BORDER-LEFT: #8cacbb 1px dashed; PADDING-TOP: 0px; BORDER-BOTTOM: #8cacbb 1px dashed
+}
+.comment H1 {
+	FONT-WEIGHT: normal; BORDER-BOTTOM: #76797c 1px dashed
+}
+.comment H2 {
+	FONT-WEIGHT: normal; BORDER-BOTTOM: #76797c 1px dashed
+}
+.comment H3 {
+	FONT-WEIGHT: normal; BORDER-BOTTOM: #76797c 1px dashed
+}
+.comment H4 {
+	FONT-WEIGHT: normal; BORDER-BOTTOM: #76797c 1px dashed
+}
+.comment H5 {
+	FONT-WEIGHT: normal; BORDER-BOTTOM: #76797c 1px dashed
+}
+.comment H6 {
+	FONT-WEIGHT: normal; BORDER-BOTTOM: #76797c 1px dashed
+}
+.commentBody {
+	MARGIN: 0px 1em 1em
+}
+.spacer {
+	MARGIN: 1em
+}
+.state-private {
+	COLOR: red
+}
+.state-visible {
+	COLOR: #74ae0b
+}
+.state-published {
+	COLOR: #436976
+}
+.state-pending {
+	COLOR: #ffa500
+}
+.state-expired {
+	COLOR: red
+}
+.syndicated {
+	COLOR: #008000
+}
+.portal-sitemap {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 90%; LIST-STYLE-IMAGE: none; MARGIN: 0px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; LIST-STYLE-TYPE: none
+}
+.portal-sitemap .portletNavigationLevel1 {
+	PADDING-LEFT: 1em; MARGIN: 0px 0px 0px 0.7em; BORDER-LEFT: #8cacbb 0.5em solid
+}
+.portal-sitemap .portletNavigationLevel2 {
+	PADDING-LEFT: 1em; BORDER-LEFT: #dfdfdf 0.5em solid
+}
+.role-Member {
+	
+}
+.role-Reviewer {
+	
+}
+.role-Manager {
+	
+}
+.role-Translator {
+	
+}
+.location-frontpage {
+	
+}
+.location-news {
+	
+}
+.location-members {
+	
+}
+.even {
+	BACKGROUND-COLOR: #edf3fe
+}
+.odd {
+	BACKGROUND-COLOR: transparent
+}
+.visualHighlight {
+	BACKGROUND-COLOR: #edf3fe
+}
+.discreet {
+	FONT-WEIGHT: normal; FONT-SIZE: 85%; COLOR: #76797c
+}
+.listingBar {
+	CLEAR: both; BORDER-RIGHT: #8cacbb 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 1em; FONT-SIZE: 94%; PADDING-BOTTOM: 0em; MARGIN: 1em 0em; VERTICAL-ALIGN: top; TEXT-TRANSFORM: lowercase; BORDER-LEFT: #8cacbb 1px solid; PADDING-TOP: 0em; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: center
+}
+.listingBar SPAN.previous {
+	FLOAT: left; MARGIN-RIGHT: 1em; TEXT-ALIGN: left
+}
+.listingPrevious {
+	FLOAT: left; MARGIN-RIGHT: 1em; TEXT-ALIGN: left
+}
+.listingBar SPAN.next {
+	FLOAT: right; MARGIN-LEFT: 1em; TEXT-ALIGN: right
+}
+.listingNext {
+	FLOAT: right; MARGIN-LEFT: 1em; TEXT-ALIGN: right
+}
+.listingBar IMG {
+	VERTICAL-ALIGN: middle
+}
+.link-plain {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: none; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.link-parent {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 16px; FONT-SIZE: 85%; BACKGROUND: url(http://plone.org/arrowUp.gif) no-repeat 4px 5px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-user {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/user.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-external {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/link_icon.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-https {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/lock_icon.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-mailto {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/mail_icon.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-news {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/topic_icon.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-ftp {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/file_icon.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-irc {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/discussionitem_icon.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-callto {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; BACKGROUND: url(http://plone.org/phone_icon.gif) no-repeat 0px 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.link-comment {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 16px! important; BACKGROUND: url(http://plone.org/discussionitem_icon.gif) no-repeat left center; PADDING-BOTTOM: 1px! important; PADDING-TOP: 1px! important
+}
+.link-anchor {
+	FONT-WEIGHT: normal; COLOR: #76797c; TEXT-DECORATION: none
+}
+.hiddenStructure {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; MARGIN: -1px 0px 0px -1px; OVERFLOW: hidden; BORDER-LEFT: medium none; WIDTH: 1px; PADDING-TOP: 0px; BORDER-BOTTOM: medium none; HEIGHT: 1px
+}
+.contentViews .hiddenStructure {
+	LEFT: -200px; POSITION: absolute; TOP: -200px
+}
+.contentActions .hiddenStructure {
+	LEFT: -200px; POSITION: absolute; TOP: -200px
+}
+.visualClear {
+	CLEAR: both; DISPLAY: block
+}
+.hiddenLabel {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; MARGIN: -1px 0px 0px -1px; OVERFLOW: hidden; BORDER-LEFT: medium none; WIDTH: 1px; PADDING-TOP: 0px; BORDER-BOTTOM: medium none; HEIGHT: 1px
+}
+.label {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline; FONT-WEIGHT: bold
+}
+.optionsToggle {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; FONT-WEIGHT: normal! important; FONT-SIZE: 85%; BORDER-LEFT: #8cacbb 1px solid; COLOR: black; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.portalNotLoggedIn {
+	
+}
+UNKNOWN {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-LEFT-COLOR: #ffa500; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #ffa500; BORDER-TOP-COLOR: #ffa500; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #ffa500
+}
+.visualOverflow {
+	MARGIN: 0px 0px 1em; OVERFLOW: auto
+}
+.visualOverflow PRE {
+	MARGIN: 0px
+}
+.visualOverflow TABLE {
+	MARGIN: 0px
+}
+.visualOverflow IMG {
+	MARGIN: 0px
+}
+.visualFontSizeCorrection {
+	FONT-SIZE: 75%
+}
+.dayPopup {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: black 1px solid; PADDING-LEFT: 0.2em; Z-INDEX: 2; VISIBILITY: hidden; PADDING-BOTTOM: 0.2em; BORDER-LEFT: black 1px solid; WIDTH: 12em; PADDING-TOP: 0.2em; BORDER-BOTTOM: black 1px solid; POSITION: absolute; BACKGROUND-COLOR: #ffffe1
+}
+.date {
+	FONT-WEIGHT: bold;BORDER-RIGHT: #8cacbb 1px solid
+}
+.ploneCalendar {
+	BORDER-RIGHT: #8cacbb 1px solid; BORDER-TOP: #8cacbb 1px solid; MARGIN: 1em 0em; BORDER-LEFT: #8cacbb 1px solid; BORDER-BOTTOM: #8cacbb 1px solid
+}
+.ploneCalendar A {
+	TEXT-DECORATION: none
+}
+.ploneCalendar A:hover {
+	TEXT-DECORATION: none
+}
+.ploneCalendar TH {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BACKGROUND-COLOR: #6699CC; TEXT-ALIGN: center
+}
+.ploneCalendar TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 1.5em; PADDING-TOP: 2px; BACKGROUND-COLOR: transparent; TEXT-ALIGN: right
+}
+.ploneCalendar .weekdays TD {
+	BORDER-RIGHT: #8cacbb 1px; PADDING-RIGHT: 2px; BORDER-TOP: #8cacbb 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #8cacbb 1px; PADDING-TOP: 2px; BORDER-BOTTOM: #8cacbb 1px solid; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: center
+}
+.ploneCalendar .event {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #dfdfdf
+}
+.ploneCalendar .todayevent {
+	BORDER-RIGHT: #ffa500 2px solid; BORDER-TOP: #ffa500 2px solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffa500 2px solid; BORDER-BOTTOM: #ffa500 2px solid; BACKGROUND-COLOR: #dfdfdf
+}
+.ploneCalendar .todaynoevent {
+	BORDER-RIGHT: #ffa500 2px solid; BORDER-TOP: #ffa500 2px solid; BORDER-LEFT: #ffa500 2px solid; BORDER-BOTTOM: #ffa500 2px solid; BORDER-COLLAPSE: collapse
+}
+.highlightedSearchTerm {
+	BACKGROUND-COLOR: #feff82
+}
+.currentItem {
+	BORDER-RIGHT: #ffa500 2px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ffa500 2px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #ffa500 2px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #ffa500 2px solid; BORDER-COLLAPSE: collapse
+}

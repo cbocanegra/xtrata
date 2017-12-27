@@ -1,0 +1,9 @@
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\bin\Debug\Emp_Entity.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\bin\Debug\Emp_Entity.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\bin\Debug\Emp_Entity.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.Resources.resources
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.vbproj.GenerateResource.Cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Entity\obj\Debug\Emp_Entity.pdb

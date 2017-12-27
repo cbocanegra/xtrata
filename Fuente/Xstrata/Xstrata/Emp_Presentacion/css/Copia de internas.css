@@ -1,0 +1,69 @@
+/* Internas */
+
+#header 
+{
+ background :url(../images/internas/banarchivo.jpg) no-repeat right bottom; height:125px; font-size:12px !important;
+}
+
+#header p.logo {  padding-top:37px; padding-left:30px; }
+
+#top-header { width:722px; float:right; height:37px;}
+
+#top-header .bg-left { background:url(../images/internas/c1ransa.gif) no-repeat left; width:30px; height:37px; float:left;}
+
+#top-header #access-buttons { background:#009b3a; width:566px; height:17px; float:left; color:#005f2a; padding:10px 0px; margin:0px;}
+
+* html #top-header #access-buttons { padding:8px 0px; }
+
+#top-header #access-buttons p {}
+
+#top-header #access-buttons select { color:#666666; border:none; font-size:12px; }
+
+#top-header #ramsa-net { background:#009b3a; float:left; height:37px; width:126px; }
+
+#top-header #ramsa-net img { padding-top:5px;}
+
+#account { height:22px; padding-left:30px; }
+
+#account .bg-account-left { background:url(../images/internas/c2ransa.gif) no-repeat left; width:10px; height:22px; float:left; }
+
+#account #account-data { background:#e37222; color:#FFFFFF; float:left; height:17px; width:962px; font:11px Arial, Helvetica, sans-serif; padding-top:5px;}
+
+#account #account-data  { }
+
+/*#account #account-data ul li{
+	float:left;
+	list-style:none;
+	background: #fff;
+	padding:0px; margin:0px; }
+
+#account #account-data ul li { list-style-image:url(../images/internas/li-icon.png); list-style-position:inside; list-style-type:none; float:left; }*/
+
+
+#menu { padding-left:30px; background:#009b3a; font:11px Verdana, Arial, Helvetica, sans-serif; width:972px; }
+
+#content { padding:20px 30px; font-size:12px; color:#666666; }
+
+#content #photo-empresa { float:left; margin-right:20px; }
+
+#section-container { margin-top:30px; }
+
+#section-container .section { float:left; width:450px; border:1px solid #666666;}
+ 
+#section-container .section .section-title { background:#dddddd url(../images/internas/subtitle-icon.png) left center no-repeat; height:28px; font-weight:bold; color:#333333; padding:5px; padding-left:30px; }
+
+#section-container .section .section-title p { padding:5px;}
+
+#section-container .section-buttons { float:right; }
+
+#section-container .section-buttons li { list-style:none; float:left; margin:0px; margin-right:4px; }
+
+#section-container .section-buttons a.help { background:url(../images/internas/help.png) no-repeat; width:23px; height:25px; display:block; background-position:0px 0px;}
+#section-container .section-buttons a.conf { background:url(../images/internas/conf.png) no-repeat; width:23px; height:25px; display:block; background-position:0px 0px;}
+#section-container .section-buttons a.edit { background:url(../images/internas/edit.png) no-repeat; width:23px; height:25px; display:block; background-position:0px 0px;}
+#section-container .section-buttons a.mini{ background:url(../images/internas/mini.png) no-repeat; width:23px; height:25px; display:block; background-position:0px 0px;}
+#section-container .section-buttons a.maxi{ background:url(../images/internas/maxi.png) no-repeat; width:23px; height:25px; display:block; background-position:0px 0px;}
+
+#section-container .section-buttons a:hover { background-position:0px -25px; }
+
+#footer { }

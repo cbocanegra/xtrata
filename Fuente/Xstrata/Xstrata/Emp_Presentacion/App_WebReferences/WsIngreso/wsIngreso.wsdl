@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidarAccesos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdApli" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarAccesosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidarAccesosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidarAccesosSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarAccesos" />
+  </wsdl:message>
+  <wsdl:message name="ValidarAccesosSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarAccesosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidarAccesosHttpGetIn">
+    <wsdl:part name="Usuario" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="IdApli" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidarAccesosHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidarAccesosHttpPostIn">
+    <wsdl:part name="Usuario" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="IdApli" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidarAccesosHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="wsIngresoSoap">
+    <wsdl:operation name="ValidarAccesos">
+      <wsdl:input message="tns:ValidarAccesosSoapIn" />
+      <wsdl:output message="tns:ValidarAccesosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="wsIngresoHttpGet">
+    <wsdl:operation name="ValidarAccesos">
+      <wsdl:input message="tns:ValidarAccesosHttpGetIn" />
+      <wsdl:output message="tns:ValidarAccesosHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="wsIngresoHttpPost">
+    <wsdl:operation name="ValidarAccesos">
+      <wsdl:input message="tns:ValidarAccesosHttpPostIn" />
+      <wsdl:output message="tns:ValidarAccesosHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsIngresoSoap" type="tns:wsIngresoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarAccesos">
+      <soap:operation soapAction="http://tempuri.org/ValidarAccesos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsIngresoHttpGet" type="tns:wsIngresoHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ValidarAccesos">
+      <http:operation location="/ValidarAccesos" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsIngresoHttpPost" type="tns:wsIngresoHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ValidarAccesos">
+      <http:operation location="/ValidarAccesos" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsIngreso">
+    <wsdl:port name="wsIngresoSoap" binding="tns:wsIngresoSoap">
+      <soap:address location="http://rancal08.ransa.net/Aplicaciones/wsIngreso.ASMX" />
+    </wsdl:port>
+    <wsdl:port name="wsIngresoHttpGet" binding="tns:wsIngresoHttpGet">
+      <http:address location="http://rancal08.ransa.net/Aplicaciones/wsIngreso.ASMX" />
+    </wsdl:port>
+    <wsdl:port name="wsIngresoHttpPost" binding="tns:wsIngresoHttpPost">
+      <http:address location="http://rancal08.ransa.net/Aplicaciones/wsIngreso.ASMX" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

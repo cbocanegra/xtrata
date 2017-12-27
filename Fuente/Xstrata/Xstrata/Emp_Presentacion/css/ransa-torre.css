@@ -1,0 +1,18 @@
+#header { background:url(../images/internas/bantorre.jpg) no-repeat right bottom; height:125px; font-size:12px !important;}
+
+#header p.logo { padding-top:10px; padding-left:30px; }
+
+#top-header .bg-left { background:url(../images/internas/c1torre.gif) no-repeat left; width:30px; height:37px; float:left;}
+
+#top-header #access-buttons { background:#009b3a; width:566px; height:17px; float:left; color:#005f2a; padding:10px 0px; margin:0px;}
+
+#account .bg-account-left { background:url(../images/internas/c2torre.gif) no-repeat left; width:10px; height:22px; float:left; }
+
+/*#account { background:#b2101d; }*/
+
+#account #account-data { background:#EA7125; color:#FFFFFF; float:left; height:17px; width:962px; font:11px Arial, Helvetica, sans-serif; padding-top:5px;}
+
+#top-header #ramsa-net { background:#009b3a; float:left; height:37px; width:126px; }
+/* Menu */
+
+#menu { padding-left:30px; background:#ffcb4f; font:11px Verdana, Arial, Helvetica, sans-serif; width:972px; }

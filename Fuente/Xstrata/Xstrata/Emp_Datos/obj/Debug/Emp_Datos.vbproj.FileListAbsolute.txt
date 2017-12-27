@@ -1,0 +1,70 @@
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.Resources.resources
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.vbproj.GenerateResource.Cache
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.dll
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.pdb
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.xml
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Entidad.dll
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Entidad.pdb
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.dll
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.xml
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Entidad.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Entidad.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.Resources.resources
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.vbproj.GenerateResource.Cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\bin\Debug\Emp_Datos.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\bin\Debug\Emp_Datos.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\bin\Debug\Emp_Datos.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\bin\Debug\Emp_Entidad.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\bin\Debug\Emp_Entidad.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\obj\Debug\Emp_Datos.Resources.resources
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\obj\Debug\Emp_Datos.vbproj.GenerateResource.Cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\obj\Debug\Emp_Datos.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\obj\Debug\Emp_Datos.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Datos\obj\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Entidad.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\bin\Debug\Emp_Entidad.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.Resources.resources
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.vbproj.GenerateResource.Cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Datos\obj\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\bin\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\bin\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\bin\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\bin\Debug\Emp_Entidad.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\bin\Debug\Emp_Entidad.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\obj\Debug\Emp_Datos.Resources.resources
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\obj\Debug\Emp_Datos.vbproj.GenerateResource.Cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\obj\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\obj\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Datos\obj\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Datos.dll.config
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Entidad.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Entity.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Entidad.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Entity.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\bin\Debug\Emp_Entity.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.Resources.resources
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.vbproj.GenerateResource.Cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Datos\obj\Debug\Emp_Datos.pdb

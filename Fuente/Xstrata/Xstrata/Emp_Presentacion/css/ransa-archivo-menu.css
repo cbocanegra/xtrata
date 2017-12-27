@@ -1,0 +1,32 @@
+/* Estilos Menu Ransa Archivo */
+
+.sf-menu a, .sf-menu a:visited { 
+	/* visited pseudo selector so IE6 applies text colour*/
+	color:#FFFFFF;
+}
+
+.sf-menu li {
+	background:url(../images/internas/fbotransa.gif) no-repeat;
+	width:170px;
+	height:26px;
+}
+
+.sf-menu li a { background:url(../images/internas/arrow-white.png) no-repeat scroll 7px 50%;}
+
+.sf-menu li li { background:#009b3a;}
+
+.sf-menu a.arrow:hover { background:#015b23 url(../images/internas/arrow-white.png) no-repeat scroll right; background-position:160px 50%;}
+
+/*.sf-menu li li a:hover, .sf-menu li li li a:hover, .sf-menu li li li li a:hover { }*/
+
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background:#015b23 url(../images/internas/arrow-white.png) no-repeat scroll 7px 50%; 
+	outline:0; 
+}
+
+.sf-menu li a { background:url(../images/internas/arrow-white.png) no-repeat scroll 7px 50%;}
+
+.sf-menu li li li { background:#009b3a; }
+
+/*.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active { background:url(../images/internas/fbotransa.gif) no-repeat; }*/

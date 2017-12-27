@@ -1,0 +1,31 @@
+/* Estilos Menu Ransa Modulos */
+
+.sf-menu a, sf-menu a:visited   { 
+	/* visited pseudo selector so IE6 applies text colour*/
+	color:#ffffff;
+}
+
+.sf-menu li {
+	background:url(../images/internas/fbotmodulo.gif) no-repeat;
+	width:170px;
+	height:26px;
+}
+
+.sf-menu li li { background:#005d4f; color:#ffffff; }
+
+.sf-menu a.arrow:hover { background:#019a83 url(../images/internas/arrow-white.png) no-repeat scroll right; background-position:160px 50%; font-weight:bold;}
+
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active, sf-menu a:link {
+	background:#019a83 url(../images/internas/arrow-white.png) no-repeat scroll 7px 50%; 
+	outline:0; color:#ffffff; /*font-weight:bold;*/
+}
+
+/*.sf-menu li:hover, .sf-menu li.sfHover { color:#ffffff; }*/
+
+.sf-menu li a { background:url(../images/internas/arrow-white.png) no-repeat scroll 7px 50%; color:#019a83; }
+
+.sf-menu li a, .sf-menu li li a, .sf-menu li li li a, .sf-menu li li li li a { color:#ffffff; }
+
+.main { font-weight:bold; }
+.main a { color:#019a83 !important; }

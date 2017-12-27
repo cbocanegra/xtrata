@@ -1,0 +1,42 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "BD_Seguimiento"
+   MSDTVersion = "80"
+   DefDBRef = "ODBC.RANSA.IASP"
+   Begin Folder = "Change Scripts"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "ODBC.RANSA.IASP"
+         ConnectStr = "Dsn=RANSA;uid=appdb2"
+         Provider = "{C3D4F4CE-2C48-4381-B4D6-34FA50C51C86}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Queries"
+   End
+   Begin Folder = "SP_AGENCIAS"
+      Script = "SP_AGENCIAS_CONTROL_GASTOS.sql"
+      Script = "SP_AGENCIAS_DESCRIP_CLIENTE.sql"
+      Script = "SP_AGENCIAS_ORDENCOMPRA.sql"
+      Script = "SP_AGENCIAS_XSTRATA.sql"
+      Script = "SP_AGENCIAS_XSTRATAP.sql"
+      Script = "SP_CABECERA_DUAA.sql"
+      Script = "SP_CONSULTA_SEG_WEB.sql"
+      Script = "SP_CREAR_OS_ZZ201001.sql"
+      Script = "SP_CREAR_OS_ZZ201002sql.sql"
+      Script = "SP_DETALLE_DUAA.sql"
+      Script = "SP_GENERAR_OS.sql"
+      Script = "SP_GENERAR_OS_BACKUP.sql"
+      Script = "SP_SOLSEGORD_IMP_ACTUALIZAR_CHECKPOINT_XSTRATA.sql"
+      Script = "SP_SOLSEGORD_IMP_CONSULTA_SEGIMPORTACION_XSTRATA_DETALLE.sql"
+      Script = "SP_SOLSEGORD_IMP_CONSULTA_SEGIMPORTACION_XTRATA_COSTOS.sql"
+      Script = "SP_SOLSEGORD_IMP_CONSULTA_SEGIMPORTACION_XTRATA1.sql"
+      Script = "SP_SOLSEGORD_IMP_DISTRIBUCION_COSTOS.sql"
+      Script = "SP_SOLSEGORD_IMP_DISTRIBUCION_ORDEN_COMPRA.sql"
+      Script = "SP_SOLSEGORD_IMP_INSERTAR_FECHA_CHECKPOINT.sql"
+      Script = "SP_SOLSEGORD_IMP_XTRATA_SELECT_CHECKPOINT.sql"
+      Script = "SP_SOLSEGORD_IMP_ZONAS.sql"
+      Script = "SP_TRANSFERENCIA_CONSULTAXP3.sql"
+      Script = "SP_VALIDAR_ACCESOS.sql"
+      Script = "SP_WEBAGENCIAS_GETTABLE.sql"
+   End
+End

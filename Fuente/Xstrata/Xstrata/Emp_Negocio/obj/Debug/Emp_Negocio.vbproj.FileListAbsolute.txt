@@ -1,0 +1,87 @@
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.Resources.resources
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.vbproj.GenerateResource.Cache
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.dll
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.pdb
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.xml
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.dll
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Entidad.dll
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.pdb
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.xml
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Entidad.pdb
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.dll
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.xml
+D:\Aplicativos_Christian\Aplicativos_Ransa\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Entidad.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Entidad.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.Resources.resources
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.vbproj.GenerateResource.Cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Negocio.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Negocio.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Negocio.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Datos.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Entidad.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Datos.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Datos.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\bin\Debug\Emp_Entidad.pdb
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\obj\Debug\Emp_Negocio.Resources.resources
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\obj\Debug\Emp_Negocio.vbproj.GenerateResource.Cache
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\obj\Debug\Emp_Negocio.dll
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\obj\Debug\Emp_Negocio.xml
+D:\UTILITARIOS\SlnSamsung\Sln_Samsung_V1\Emp_Negocio\obj\Debug\Emp_Negocio.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Negocio.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Entidad.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\bin\Debug\Emp_Entidad.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.Resources.resources
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.vbproj.GenerateResource.Cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung\Emp_Negocio\obj\Debug\Emp_Negocio.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Negocio.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Negocio.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Negocio.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Entidad.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\bin\Debug\Emp_Entidad.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\obj\Debug\Emp_Negocio.Resources.resources
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\obj\Debug\Emp_Negocio.vbproj.GenerateResource.Cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\obj\Debug\Emp_Negocio.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\obj\Debug\Emp_Negocio.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung pa Agencias\Emp_Negocio\obj\Debug\Emp_Negocio.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Negocio.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Negocio.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Negocio.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Datos.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Entidad.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Entity.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Entidad.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Entity.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Entity.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Datos.pdb
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\bin\Debug\Emp_Datos.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\ResolveAssemblyReference.cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.Resources.resources
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.vbproj.GenerateResource.Cache
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.dll
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.xml
+D:\Aplicaciones_Web_Christian\Sln_Samsung Columnas Width\Emp_Negocio\obj\Debug\Emp_Negocio.pdb

@@ -1,0 +1,255 @@
+<%@ Master Language="VB" CodeFile="MstEmpleado.master.vb" Inherits="MstEmpleado"  %>
+<%@ Register assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <%--<meta http-equiv="X-UA-Compatible" content="IE=7" />--%>
+    <%--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />--%>
+
+    <title>Seguimiento de Ordenes</title>    
+    <%--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />--%>
+    <%--<meta name="generator" content="Microsoft Visual Studio, see http://msdn.microsoft.com/vstudio/" />--%>
+    <%--<meta name="Keywords" content="Compañia Almacenera" />--%>
+    <meta name="Description" content="CASA - Sistema Gestión de Inspectoría" />
+    <meta name="copyright" content="Copyright (c) 2009 CASA, Inc. All rights reserved." />
+    <link href="App_Themes/Standard/css-content.css" rel="stylesheet" type="text/css" media="interactive, braille, emboss, handheld, projection, screen, tty, tv" />
+    <link href="App_Themes/css-print.css" rel="stylesheet" type="text/css" media="print" />
+   <%-- <link rel="shortcut icon" href="images/favicon.ico" />--%>
+    <link href="css/internas.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="css/superfish-basic.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="css/ransa-archivo-menu.css" type="text/css" media="all" rel="stylesheet" />
+    <link href="css/ransa-archivo.css" type="text/css" media="all" rel="stylesheet" />          
+    
+    <%--<script type="text/javascript" src="Jquey/jquery-1.4.2.min.js"></script>--%>
+     <link href="mbTooltip.css" rel="stylesheet" type="text/css" /> 
+    
+     <%--<link href="Libreria/css/le-frog/jquery-ui-1.8.2.custom.css" rel="stylesheet" type="text/css" />--%>
+     <script type="text/javascript" src="Jquey/jquery-1.4.2.js"></script>
+     <script type="text/javascript" src="Jquey/sexylightbox.v2.3.jquery.min.js"></script>       
+     <script type="text/javascript" src="Jquey/jquery.maskedinput-1.2.2.js"></script>
+    <script type="text/javascript" src="PanelUI/jquery-ui.min.js"></script>
+    
+    <link href="PanelUI/jquery-ui.css" rel="stylesheet" type="text/css" /> 
+    <%--<script type="text/javascript" src="PanelUI/jquery.min.js"></script>--%>
+    
+    <link rel="stylesheet" href="Jquey/sexylightbox.css"  type="text/css" media="all" />
+    <link href="StilosPanel/PanelStilos.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+    SexyLightbox.initialize({ color: 'black', dir: 'sexyimages' });
+      // $('input[id$=txtAforo]').tooltip('<p>Formato fecha: mes/dia/año</p>',{
+        //        width: 150,
+        //        style: 'alert',
+                //sticky: 1,
+         //       hook: 1
+              //  mode: 'tr'
+         //  });
+           
+//         $('input[id$=txtAforo]').tooltip 
+//         ('<h1>Formato Fecha</h1><p>Mes / dia/ año</p>', 
+//         { width: 200, style: 'alert' });
+  //    $("[title]").mbTooltip({ // also $([domElement]).mbTooltip  >>  in this case only children element are involved
+  //    opacity : .97,       //opacity
+  //    wait:100,           //before show
+  //    cssClass:"default",  // default = default
+  //    timePerWord:50,      //time to show in milliseconds per word
+  //    hasArrow:false,			// if you whant a little arrow on the corner
+  //    hasShadow:true,
+   //   imgPath:"images/",
+   //   ancor:"mouse", //"parent"  you can ancor the tooltip to the mouse position or at the bottom of the element
+  //    shadowColor:"black", //the color of the shadow
+  //    mb_fade:200 //the time to fade-in
+  //  });
+  
+         
+        $("input[id$=txtAforo]").mask("99/99/9999");
+        $("input[id$=txtRetiro]").mask("99/99/9999");
+        $("input[id$=Numeracion]").mask("99/99/9999");
+        $("input[id$=dtregistro]").mask("99/99/9999");
+    //    $("input[id$=dtVenc]").mask("99/99/9999");
+        
+        
+     });
+     
+   
+     $(document).ready(function () {                                                                                  
+        $("div[id$=Panel1]").draggable();                                
+     });
+   
+    </script>
+    
+    <%--<style type="text/css">
+            .alert h1 {
+              font-family:Verdana,Arial,Helvetica,sans-serif;
+              font-size:1em;
+              font-weight:bold;
+              padding-left:18px;
+              background: url('images/internas/error.png') no-repeat left ;
+              color:#000;
+              margin:0 0 8px 0;
+            }
+            .alert p {
+              font-family:Verdana,Arial,Helvetica,sans-serif;
+              font-size:0.9em;
+              font-weight:normal;
+              color:#000;
+              margin:0;
+              padding:0 0 8px 0;
+              line-height:14px;
+            }
+            .alert img {
+              vertical-align: top;
+            }
+            
+            .wiki h1
+            {
+              background:#C4D5E3 url(images/wikiTitle.png) no-repeat scroll 0% 50%;
+              padding:5px 0px 5px 80px;
+              border:1px solid #C4D5E3;
+              font-weight:bold;
+              clear: both; 
+              font-size: 12px;
+              color: #000;
+              margin: 0 0 8px 0;
+            }
+
+            .wiki p {
+              font-family:Verdana,Arial,Helvetica,sans-serif;
+              font-size:0.8em;
+              font-weight:normal;
+              color:#000;
+              margin:0;
+              padding:0 0 8px 0;
+              line-height:1.2em;
+            }
+
+            .wiki .thumbcaption{
+              font-size:10px;
+            }
+            .wiki .thumbinner{
+              background:#D6E6FE;
+              margin:4px auto;
+              text-align:center;
+              padding:5px;
+              border:dashed #CCCCCC 1px;
+            }
+
+            .msn {
+                opacity:0.90;
+            }
+
+            .msn h1 {
+              font-size:1.1em;
+              padding-left:18px;
+              background: url('images/msn.gif') no-repeat left center;
+              color:#333333;
+              margin:0 0 8px 0;
+            }
+
+            .msn p {
+              margin:0;
+              padding:8px 0 8px 0;
+              line-height:14px;
+            }
+            
+            .msn img {
+              float: left;
+              margin-right:6px;
+              padding-bottom:12px
+            }
+
+
+          </style>--%>            
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+    </style>
+</head>           
+<%--</head>--%>
+<body>
+    <form id="form1" runat="server">    
+ <!--
+TOP INFORMTION
+-->
+       <%-- <div id="top-information" style="right: 0px; top: -10px; height: 12em">
+            <asp:Image ID="Image1" runat="server" Height="120px" ImageUrl="~/Imagenes/Casa7.jpg"
+                Width="760px" />  </div>--%>                       
+        <div id="top-information" style="right: 19px; top: 0px; height: 12em">
+        
+        <div id="header">
+   	    <div id="top-header">
+      	    <div class="bg-left"></div>
+             <div id="access-buttons">
+                <a href="Default.aspx"><img src="images/internas/conransa.gif" width="97" height="12" alt="Cont&aacute;ctenos"/></a>
+                <%--<a href="#"><img src="images/internas/camransa.gif" width="157" height="12" alt="Cambiar contrase&ntilde;a" /></a>--%>
+                <%--<a href="#"><img src="images/internas/cerransa.gif" width="115" height="12" alt="Cerrar Sesi&oacute;n" /></a>--%>
+                <%--<label for="language">--%>
+                <%--<img src="images/internas/idiransa.gif" width="51" height="12" alt="Idioma" /></label>&nbsp;--%>
+              <%--  <select name="language" id="language">
+                   <option value="1">espa&ntilde;ol</option>
+                   <option value="2">ingl&eacute;s</option>
+                </select>--%>
+             </div>
+             <div id="ramsa-net"><img src="images/internas/logransanet.gif" width="84" height="27" alt="Ransa Net"/></div>
+             <div class="clear"></div>
+          </div>
+          <p class="logo" >   
+              <span >&nbsp;<asp:Image ID="Image1" runat="server" Height="110px" 
+                  ImageUrl="~/Imagenes/Agencias555.png" Width="185px" />
+              </span>
+       </div>
+        
+        <!--
+
+TOP NAV
+-->
+       
+        <div id="nav-main" style="right: 0px; top: 0px">
+                   <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+                Width="656px" CssClass="menu-main" MaximumDynamicDisplayLevels="0" 
+                       StaticSelectedStyle-CssClass="StaticSelectedStyle" Height="17px" >
+<StaticSelectedStyle CssClass="StaticSelectedStyle"></StaticSelectedStyle>
+                   </asp:Menu>
+            <div style="right: 0px; top: 0px; height: 18px;">
+                &nbsp;<asp:LinkButton ID="LinkButton1" runat="server">Cerrar Session</asp:LinkButton>
+                       </div>
+        </div>
+        <a id="maincontent"></a>
+     
+      <%--  <table style="right: 0px; top: 35px; height: 12.58em" >
+            <tr>
+                <td style="height: 18px; width: 757px;">--%>
+    <div id="nav-cuerpo" style="right: -3px; top: 0px; bottom: -298px">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+        <%--        </td>
+            </tr>
+        </table>--%>
+   
+        <!--
+
+FOOTER
+
+-->
+        <div id="footer" style="right: 0px; top: 0px">
+            <span class="style1">Copyright © 2012</span> . <a href="Home.aspx">TI -&nbsp; Tecnologías de la Información</a>
+            <div style="right: 0px; top: 0px">
+                &nbsp;</div>
+        </div>
+        <div id="footer-sub" style="right: 0px; top: 0px">
+            <asp:Menu ID="Menu2" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"
+                Width="489px" CssClass="menu-main" MaximumDynamicDisplayLevels="0" 
+                Height="16px" />
+        </div>
+
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+    </form>
+</body>
+</html>

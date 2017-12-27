@@ -1,0 +1,35 @@
+/* Estilos Menu Ransa Empresario */
+
+.sf-menu a, sf-menu a:visited   { 
+	/* visited pseudo selector so IE6 applies text colour*/
+	color:#ffffff;
+}
+
+.sf-menu li {
+	background:url(../images/internas/fbotempresa.gif) no-repeat;
+	width:170px;
+	height:26px;
+}
+
+.sf-menu li li { background:#337732; color:#ffffff; }
+
+.sf-menu a.arrow:hover { background:#024801 url(../images/internas/arrow-white.png) no-repeat scroll right; background-position:160px 50%; font-weight:bold;}
+
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active, sf-menu a:link {
+	background:#024801 url(../images/internas/arrow-white.png) no-repeat scroll 7px 50%; 
+	outline:0; color:#ffffff; /*font-weight:bold;*/
+}
+
+/*.sf-menu li:hover, .sf-menu li.sfHover { color:#ffffff; }*/
+
+.sf-menu li a { background:url(../images/internas/arrow-white.png) no-repeat scroll 7px 50%; color:#024801; }
+
+.sf-menu li a, .sf-menu li li a, .sf-menu li li li a, .sf-menu li li li li a { color:#ffffff; }
+
+.main { font-weight:bold; }
+.main a { color:#024801 !important; }
+
+/*.sf-menu li li li { background:#dfbf6e; }*/
+
+/*.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active { background:url(../images/internas/fbotransa.gif) no-repeat; }*/

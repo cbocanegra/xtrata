@@ -1,0 +1,39 @@
+﻿.DragPanel
+{
+    z-index: 10;
+    height: 363px;
+    width: 789px;
+    position: fixed;
+    top:252px;
+    left:180px;
+    border: 5px groove #006600;
+    
+}
+
+.DivScroll
+{
+    width: 895px;
+    height: auto;
+    margin: auto;
+    overflow: scroll;
+    overflow-y: hidden;
+    -ms-overflow-x: true;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;   
+    
+}
+
+.DivScrollV
+{
+    width: 700px;
+    height: 800px;
+    margin: auto;
+    overflow: scroll;
+    -ms-overflow-y: auto;
+    -ms-overflow-x: hidden;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;   
+       
+}

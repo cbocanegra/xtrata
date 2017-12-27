@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="ServiciosMIQ" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="ServiciosMIQ" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="ServiciosMIQ">
+      <s:element name="Get_PO_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaIni" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaFin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PO_StringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_Detalle_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDPO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_Detalle_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PO_Detalle_StringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Embarque_String">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FILENUM" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Embarque_StringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Embarque_StringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaIni" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaFin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_POResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_POResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_Detalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDPO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_DetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PO_DetalleResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Embarque">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FILENUM" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_EmbarqueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_EmbarqueResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_DetalleByPL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDPL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CBOXNO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CCHKPNT" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="GUIAREMISION" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_PO_DetalleByPLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_PO_DetalleByPLResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_FileNumber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ConEmbarque" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_FileNumberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_FileNumberResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_BL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FILENUM" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NORDAGE" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="DORDAGE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="STIPREG" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SNOMTER" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SDIALIB" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="SSOBEST" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SCANAL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SOBS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CCODCON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SDUA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_BLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Put_BLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_CheckPoint_BL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FILENUM" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CCHKPNT" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOBSCP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DCRECP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CESTOBJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_CheckPoint_BLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Put_CheckPoint_BLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_Costs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TIPCOST" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CCID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CODENTIDAD" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CTIPCOST" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TCOMMENTS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CPAIDTYPE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SVALBUY" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="SVALSEL" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="SVALEXCHANGERATE" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="CESTOBJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_CostsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Put_CostsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_CheckPoint_PLBox">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDPL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CBOXNO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CCHKPNT" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NOBSCP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DFECCRE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CESTOBJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_CheckPoint_PLBoxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Put_CheckPoint_PLBoxResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_Load">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CCLIENT" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NNROLOAD" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CTRANSP" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NCARGUILOA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NVEHDESLOA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CTYPLA" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="NDRV" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NDLVTCK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NATTPLALOA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NTRAPLALOA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SWEILOA" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="CUNIMEDWEI" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="STOTBULK" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="NCTCLOA" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CESTOBJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_LoadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Put_LoadResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_AsocLoad_PLBox">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="COD_GUID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CIDCUS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CIDPL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CBOXNO" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NNROLOAD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CESTOBJ" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Put_AsocLoad_PLBoxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Put_AsocLoad_PLBoxResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get_PO_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO_String" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PO_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_Detalle_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO_Detalle_String" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_Detalle_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PO_Detalle_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Embarque_StringSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Embarque_String" />
+  </wsdl:message>
+  <wsdl:message name="Get_Embarque_StringSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Embarque_StringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_POSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO" />
+  </wsdl:message>
+  <wsdl:message name="Get_POSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_POResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_DetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO_Detalle" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_DetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PO_DetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmbarqueSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Embarque" />
+  </wsdl:message>
+  <wsdl:message name="Get_EmbarqueSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_EmbarqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_DetalleByPLSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_PO_DetalleByPL" />
+  </wsdl:message>
+  <wsdl:message name="Get_PO_DetalleByPLSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_PO_DetalleByPLResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_FileNumberSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_FileNumber" />
+  </wsdl:message>
+  <wsdl:message name="Get_FileNumberSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_FileNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="Put_BLSoapIn">
+    <wsdl:part name="parameters" element="tns:Put_BL" />
+  </wsdl:message>
+  <wsdl:message name="Put_BLSoapOut">
+    <wsdl:part name="parameters" element="tns:Put_BLResponse" />
+  </wsdl:message>
+  <wsdl:message name="Put_CheckPoint_BLSoapIn">
+    <wsdl:part name="parameters" element="tns:Put_CheckPoint_BL" />
+  </wsdl:message>
+  <wsdl:message name="Put_CheckPoint_BLSoapOut">
+    <wsdl:part name="parameters" element="tns:Put_CheckPoint_BLResponse" />
+  </wsdl:message>
+  <wsdl:message name="Put_CostsSoapIn">
+    <wsdl:part name="parameters" element="tns:Put_Costs" />
+  </wsdl:message>
+  <wsdl:message name="Put_CostsSoapOut">
+    <wsdl:part name="parameters" element="tns:Put_CostsResponse" />
+  </wsdl:message>
+  <wsdl:message name="Put_CheckPoint_PLBoxSoapIn">
+    <wsdl:part name="parameters" element="tns:Put_CheckPoint_PLBox" />
+  </wsdl:message>
+  <wsdl:message name="Put_CheckPoint_PLBoxSoapOut">
+    <wsdl:part name="parameters" element="tns:Put_CheckPoint_PLBoxResponse" />
+  </wsdl:message>
+  <wsdl:message name="Put_LoadSoapIn">
+    <wsdl:part name="parameters" element="tns:Put_Load" />
+  </wsdl:message>
+  <wsdl:message name="Put_LoadSoapOut">
+    <wsdl:part name="parameters" element="tns:Put_LoadResponse" />
+  </wsdl:message>
+  <wsdl:message name="Put_AsocLoad_PLBoxSoapIn">
+    <wsdl:part name="parameters" element="tns:Put_AsocLoad_PLBox" />
+  </wsdl:message>
+  <wsdl:message name="Put_AsocLoad_PLBoxSoapOut">
+    <wsdl:part name="parameters" element="tns:Put_AsocLoad_PLBoxResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Servicios_WHSESoap">
+    <wsdl:operation name="Get_PO_String">
+      <wsdl:input message="tns:Get_PO_StringSoapIn" />
+      <wsdl:output message="tns:Get_PO_StringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_Detalle_String">
+      <wsdl:input message="tns:Get_PO_Detalle_StringSoapIn" />
+      <wsdl:output message="tns:Get_PO_Detalle_StringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Embarque_String">
+      <wsdl:input message="tns:Get_Embarque_StringSoapIn" />
+      <wsdl:output message="tns:Get_Embarque_StringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO">
+      <wsdl:input message="tns:Get_POSoapIn" />
+      <wsdl:output message="tns:Get_POSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_Detalle">
+      <wsdl:input message="tns:Get_PO_DetalleSoapIn" />
+      <wsdl:output message="tns:Get_PO_DetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Embarque">
+      <wsdl:input message="tns:Get_EmbarqueSoapIn" />
+      <wsdl:output message="tns:Get_EmbarqueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_DetalleByPL">
+      <wsdl:input message="tns:Get_PO_DetalleByPLSoapIn" />
+      <wsdl:output message="tns:Get_PO_DetalleByPLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_FileNumber">
+      <wsdl:input message="tns:Get_FileNumberSoapIn" />
+      <wsdl:output message="tns:Get_FileNumberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Put_BL">
+      <wsdl:input message="tns:Put_BLSoapIn" />
+      <wsdl:output message="tns:Put_BLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Put_CheckPoint_BL">
+      <wsdl:input message="tns:Put_CheckPoint_BLSoapIn" />
+      <wsdl:output message="tns:Put_CheckPoint_BLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Put_Costs">
+      <wsdl:input message="tns:Put_CostsSoapIn" />
+      <wsdl:output message="tns:Put_CostsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Put_CheckPoint_PLBox">
+      <wsdl:input message="tns:Put_CheckPoint_PLBoxSoapIn" />
+      <wsdl:output message="tns:Put_CheckPoint_PLBoxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Put_Load">
+      <wsdl:input message="tns:Put_LoadSoapIn" />
+      <wsdl:output message="tns:Put_LoadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Put_AsocLoad_PLBox">
+      <wsdl:input message="tns:Put_AsocLoad_PLBoxSoapIn" />
+      <wsdl:output message="tns:Put_AsocLoad_PLBoxSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Servicios_WHSESoap" type="tns:Servicios_WHSESoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_PO_String">
+      <soap:operation soapAction="ServiciosMIQ/Get_PO_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_Detalle_String">
+      <soap:operation soapAction="ServiciosMIQ/Get_PO_Detalle_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Embarque_String">
+      <soap:operation soapAction="ServiciosMIQ/Get_Embarque_String" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO">
+      <soap:operation soapAction="ServiciosMIQ/Get_PO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_Detalle">
+      <soap:operation soapAction="ServiciosMIQ/Get_PO_Detalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Embarque">
+      <soap:operation soapAction="ServiciosMIQ/Get_Embarque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_DetalleByPL">
+      <soap:operation soapAction="ServiciosMIQ/Get_PO_DetalleByPL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_FileNumber">
+      <soap:operation soapAction="ServiciosMIQ/Get_FileNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_BL">
+      <soap:operation soapAction="ServiciosMIQ/Put_BL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_CheckPoint_BL">
+      <soap:operation soapAction="ServiciosMIQ/Put_CheckPoint_BL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_Costs">
+      <soap:operation soapAction="ServiciosMIQ/Put_Costs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_CheckPoint_PLBox">
+      <soap:operation soapAction="ServiciosMIQ/Put_CheckPoint_PLBox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_Load">
+      <soap:operation soapAction="ServiciosMIQ/Put_Load" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_AsocLoad_PLBox">
+      <soap:operation soapAction="ServiciosMIQ/Put_AsocLoad_PLBox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Servicios_WHSESoap12" type="tns:Servicios_WHSESoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_PO_String">
+      <soap12:operation soapAction="ServiciosMIQ/Get_PO_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_Detalle_String">
+      <soap12:operation soapAction="ServiciosMIQ/Get_PO_Detalle_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Embarque_String">
+      <soap12:operation soapAction="ServiciosMIQ/Get_Embarque_String" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO">
+      <soap12:operation soapAction="ServiciosMIQ/Get_PO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_Detalle">
+      <soap12:operation soapAction="ServiciosMIQ/Get_PO_Detalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Embarque">
+      <soap12:operation soapAction="ServiciosMIQ/Get_Embarque" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_PO_DetalleByPL">
+      <soap12:operation soapAction="ServiciosMIQ/Get_PO_DetalleByPL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_FileNumber">
+      <soap12:operation soapAction="ServiciosMIQ/Get_FileNumber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_BL">
+      <soap12:operation soapAction="ServiciosMIQ/Put_BL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_CheckPoint_BL">
+      <soap12:operation soapAction="ServiciosMIQ/Put_CheckPoint_BL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_Costs">
+      <soap12:operation soapAction="ServiciosMIQ/Put_Costs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_CheckPoint_PLBox">
+      <soap12:operation soapAction="ServiciosMIQ/Put_CheckPoint_PLBox" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_Load">
+      <soap12:operation soapAction="ServiciosMIQ/Put_Load" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Put_AsocLoad_PLBox">
+      <soap12:operation soapAction="ServiciosMIQ/Put_AsocLoad_PLBox" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Servicios_WHSE">
+    <wsdl:port name="Servicios_WHSESoap" binding="tns:Servicios_WHSESoap">
+      <soap:address location="http://powerplus.miq.com/servicecloud2/service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Servicios_WHSESoap12" binding="tns:Servicios_WHSESoap12">
+      <soap12:address location="http://powerplus.miq.com/servicecloud2/service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
