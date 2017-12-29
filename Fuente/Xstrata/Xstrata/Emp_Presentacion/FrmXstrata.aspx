@@ -25,6 +25,22 @@
                 <td style="height: 35px">
                     &nbsp;</td>
             </tr>
+            <tr>
+                <td style="height: 25px; width: 59px;">
+                    <span style="color: #000000">Zona</span>
+                </td>
+                <td colspan="5">
+                    <asp:DropDownList ID="ddlZona" runat="server" Width="150px"></asp:DropDownList>
+                </td>                
+            </tr>
+            <tr>
+                <td style="height: 25px; width: 59px;">
+                    <span style="color: #000000">Cliente</span>
+                </td>
+                <td colspan="5">
+                    <asp:DropDownList ID="ddlCliente" runat="server" Width="150px"></asp:DropDownList>
+                </td>                
+            </tr>
                                                                      
            <%-- <tr>
                 <td style="height: 18px; width: 59px;">
@@ -63,7 +79,7 @@
             <asp:Button ID="Button2" runat="server" Font-Bold="True" Height="22px" 
                 Text="Refrescar" Width="184px" Visible="False" />
             </td><td>&nbsp;
-            <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/WebService2.png" />
+            <asp:Image ID="Image2" runat="server" Visible="false" ImageUrl="~/Imagenes/WebService2.png" />
 &nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" Height="22px" Text="Consumir Nuevo" 
                 Width="138px" Font-Bold="True" Visible="False" />
@@ -125,7 +141,7 @@
                  <asp:BoundField DataField="DCREFE" HeaderText="REFERENCIA" Visible="False" />
                  <asp:TemplateField HeaderText="Modif.">
                       <ItemTemplate>
-                        <asp:ImageButton ID="ibt1" runat="server" CommandArgument='<%# DataBinder.Eval(Container.DataItem, "PNNMOS") & "," & DataBinder.Eval(Container.DataItem, "PNCDZO").ToString() & "," & DataBinder.Eval(Container.DataItem, "DCTPOS").ToString() & "," & DataBinder.Eval(Container.DataItem, "PNDCTR").ToString() & "," & DataBinder.Eval(Container.DataItem, "PCNMDC").ToString() & "," & DataBinder.Eval(Container.DataItem, "DDREGI").ToString()%> '
+                        <asp:ImageButton ID="ibt1" runat="server" CommandArgument='<%# DataBinder.Eval(Container.DataItem, "PNNMOS") & "," & DataBinder.Eval(Container.DataItem, "PNCDZO").ToString() & "," & DataBinder.Eval(Container.DataItem, "DCTPOS").ToString() & "," & DataBinder.Eval(Container.DataItem, "PNDCTR").ToString() & "," & DataBinder.Eval(Container.DataItem, "PCNMDC").ToString() & "," & DataBinder.Eval(Container.DataItem, "DDREGI").ToString() & "," & DataBinder.Eval(Container.DataItem, "DCASCI").ToString() %> '
                               ImageUrl="~/Imagenes/Modifica13.png" onclick="ibt_Click2"                                                 
                               onclientclick="" />    
                        </ItemTemplate>
@@ -462,6 +478,6 @@
         
         </tr>
         </table>
-
+        <asp:HiddenField ID="hdCliente" runat="server" Value="0" />
 </asp:Content>
 

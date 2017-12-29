@@ -321,7 +321,8 @@ Public Class DOrdenServ
         Dim CompDiv As String = ""
 
 
-        NameSp = "DESCASA.ING_VALIDA_DATOS_USUARIO_TIPO"
+        'NameSp = "DESCASA.ING_VALIDA_DATOS_USUARIO_TIPO"
+        NameSp = "DC@RNSLIB.SP_AGRANSA_WEB_SEGUI_ORD_VALIDA_DATOS_USUARIO_TIPO"
         Try
             Using cn As iDB2Connection = ConexionDB2.GetConnection()
                 Using command As New iDB2Command(NameSp, cn)
@@ -343,8 +344,6 @@ Public Class DOrdenServ
         Return CompDiv
 
     End Function
-
-
 
     Public Shared Function Zona(ByVal usuario As String) As List(Of ENTI.EZonas)
         Dim CZona As New List(Of ENTI.EZonas)
@@ -397,7 +396,8 @@ Public Class DOrdenServ
         Dim Da As New iDB2DataAdapter
         Dim NameSp As String = ""
 
-        NameSp = "DESCASA.SP_SOLSEGORD_IMP_CANT_USUARIOXZONA"
+        'NameSp = "DESCASA.SP_SOLSEGORD_IMP_CANT_USUARIOXZONA"
+        NameSp = "DC@RNSLIB.SP_AGRANSA_WEB_SEGUI_ORD_USUARIOXZONA"
 
         Try
             Using cn As iDB2Connection = ConexionDB2.GetConnection()
@@ -424,5 +424,67 @@ Public Class DOrdenServ
     '    Cn.Close()
     '    Return Cn
     'End Function
+
+
+    Public Shared Function ZonaUsuario(ByVal Usuario As String) As List(Of ENTI.EZonas)
+        Dim CZona As New List(Of ENTI.EZonas)
+        Dim Cmd As New iDB2Command
+        Dim Ds As New DataSet
+        Dim Da As New iDB2DataAdapter
+
+
+        Try
+            ConexionDB2.GetConnection()
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.CommandText = "DC@RNSLIB.SP_AGRANSA_WEB_SEGUI_ORD_ZONAS_USUARIO"
+            Cmd.Parameters.Add("IN_USUARIO", Usuario.Trim)
+            Cmd.Connection = ConexionDB2.GetConnection()
+            Da.SelectCommand = Cmd
+            Da.Fill(Ds, "ZONA")
+
+            If Ds.Tables("ZONA").Rows.Count > 0 Then
+                CZona = CargarZona(Ds.Tables("ZONA"))
+            End If
+
+            ConexionDB2.GetConnection.Close()
+            Return CZona
+        Catch ex As iDB2Exception
+            ConexionDB2.GetConnection.Close()
+            Throw ex
+        End Try
+    End Function
+
+    Public Shared Function ClienteUsuario(ByVal Usuario As String) As List(Of ENTI.EClientes)
+        Dim CCliente As New List(Of ENTI.EClientes)
+        Dim Cmd As New iDB2Command
+        Dim Ds As New DataSet
+        Dim Da As New iDB2DataAdapter
+
+        Try
+            ConexionDB2.GetConnection()
+            Cmd.CommandType = CommandType.StoredProcedure
+            Cmd.CommandText = "DC@RNSLIB.SP_AGRANSA_WEB_SEGUI_ORD_CLIENTES_USUARIO"
+            Cmd.Parameters.Add("IN_USUARIO", Usuario.Trim)
+            Cmd.Connection = ConexionDB2.GetConnection()
+            Da.SelectCommand = Cmd
+            Da.Fill(Ds, "CLIENTE")
+
+            If Ds.Tables("CLIENTE").Rows.Count > 0 Then
+                For Each Item As DataRow In Ds.Tables("CLIENTE").Rows
+                    Dim Cliente As New ENTI.EClientes()
+                    Cliente.CODCLIENTE = Convert.ToInt32(Item(0))
+                    'Cliente.NOMBRECLIENTE = Item(1).ToString()
+                    CCliente.Add(Cliente)
+                Next
+            End If
+
+            ConexionDB2.GetConnection.Close()
+            Return CCliente
+        Catch ex As iDB2Exception
+            ConexionDB2.GetConnection.Close()
+            Throw ex
+        End Try
+
+    End Function
 
 End Class

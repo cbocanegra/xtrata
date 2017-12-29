@@ -5,6 +5,6 @@
         <siteMapNode url="~/Empleado.aspx" title="Seguimiento Importacion / Exportacion"  description="Seguimiento Ordenes de Servicio" />
         <siteMapNode url="~/OrdenesdeCompra.aspx" title="Ordenes de Compra "  description="Ordenes de Compra" />
         <siteMapNode url="~/SeguimientoOrdenes.aspx" title="Seg. Ordenes"  description="Seguimiento de Ordenes" />
-        <siteMapNode url="~/FrmXstrata.aspx" title="XSTRATA"  description="xSTRATA" />
+        <siteMapNode url="~/FrmXstrata.aspx" title="Ordenes de Servicio(Nuevo)"  description="xSTRATA" />
     </siteMapNode>
 </siteMap>

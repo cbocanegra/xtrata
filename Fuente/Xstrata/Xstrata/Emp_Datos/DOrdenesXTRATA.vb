@@ -13,14 +13,15 @@ Public Class DOrdenesXTRATA
     Public Compania_Usuario As String = "FZ"
     Public Servidor As String = "RANSA"
 
-    Public Function Ordenes(ByVal Orden As String, ByVal Zona As String, ByVal Cliente As String, ByVal fecha As String, ByVal fechaconcat As String, ByVal tipo As String) As List(Of Entidad.EOrdenXSTRATA)
+    Public Function Ordenes(ByVal Orden As String, ByVal Zona As String, ByVal Cliente As Integer, ByVal fecha As String, ByVal fechaconcat As String, _
+        ByVal tipo As String, ByVal Usuario As String) As List(Of Entidad.EOrdenXSTRATA)
         Dim COrden As New List(Of Entidad.EOrdenXSTRATA)
         Dim Cmd As New iDB2Command
         Dim Ds As New DataSet
         Dim Da As New iDB2DataAdapter
         Dim NameSp As String = ""
 
-        NameSp = "DC@RNSLIB.SP_SOLSEGORD_IMP_CONSULTA_SEGIMPORTACION_XTRATA1"
+        NameSp = "DC@RNSLIB.SP_AGRANSA_WEB_SEGUI_ORD_MOSTRAR_ORDENES_IMPO"
         Try
 
             Using cn As iDB2Connection = ConexionDB2.GetConnection()
@@ -28,6 +29,8 @@ Public Class DOrdenesXTRATA
                     command.CommandType = CommandType.StoredProcedure
                     command.Parameters.Add("IN_ZONA", iDB2DbType.iDB2VarChar, 2).Value = Zona.ToString.Trim
                     command.Parameters.Add("IN_ORDEN", iDB2DbType.iDB2VarChar, 10).Value = Orden.ToString.Trim
+                    command.Parameters.Add("IN_CCLNT", iDB2DbType.iDB2Numeric, 6).Value = Cliente
+                    command.Parameters.Add("IN_USUARIO", iDB2DbType.iDB2VarChar, 10).Value = Usuario
                     command.ExecuteNonQuery()
                     Da.SelectCommand = command
                     Da.Fill(Ds, "Orden")

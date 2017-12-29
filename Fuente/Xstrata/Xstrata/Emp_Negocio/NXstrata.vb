@@ -20,7 +20,7 @@ Public Class NXstrata
 
     Public Shared Function _ValidaDatosAccesos(ByVal Usuario As String, ByVal Clave As String, ByVal TipApli As String) As List(Of ENTD.E_ValidarAcceso)
         Dim ListaValidarAcceso As List(Of ENTD.E_ValidarAcceso) = New List(Of ENTD.E_ValidarAcceso)
-        ListaValidarAcceso = BD.DXstrata.ValidaAccesos(Usuario.ToString.Trim, Clave.ToString.Trim, TipApli.ToString)
+        ListaValidarAcceso = BD.DXstrata.ValidaAccesos(Usuario.ToString.Trim, Clave.ToString.Trim)
         Return ListaValidarAcceso
     End Function
 

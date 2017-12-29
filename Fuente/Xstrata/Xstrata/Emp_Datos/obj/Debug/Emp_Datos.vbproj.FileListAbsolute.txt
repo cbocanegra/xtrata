@@ -74,7 +74,6 @@ D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin
 D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Datos.xml
 D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entidad.dll
 D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entity.dll
-D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\IBM.Data.DB2.iSeries.DLL
 D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\MySql.Data.dll
 D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entidad.pdb
 D:\Users\rortizp\Desktop\cbocanegra\Xstrata\Fuente\Xstrata\Xstrata\Emp_Datos\bin\Debug\Emp_Entity.pdb

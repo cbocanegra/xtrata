@@ -191,19 +191,18 @@ Public Class DXstrata
     End Function
 
 
-    Public Shared Function ValidaAccesos(ByVal Usuario As String, ByVal Clave As String, ByVal TipAplic As String) As List(Of Entidad.E_ValidarAcceso)
-
+    Public Shared Function ValidaAccesos(ByVal Usuario As String, ByVal Clave As String) As List(Of Entidad.E_ValidarAcceso)
 
         Dim ListAccesos As List(Of Entidad.E_ValidarAcceso) = New List(Of Entidad.E_ValidarAcceso)
         Dim cmd As iDB2DataReader
 
         Using cn As iDB2Connection = ConexionDB2.GetConnection()
-            Using command As New iDB2Command("DC@RNSLIB.SP_VALIDAR_ACCESOS", cn)
+            'Using command As New iDB2Command("DC@RNSLIB.SP_VALIDAR_ACCESOS", cn)
+            Using command As New iDB2Command("DC@RNSLIB.SP_AGRANSA_WEB_SEGUI_ORD_VALIDAR_ACCESOS", cn)
                 'Using command As New iDB2Command(Sql, cn)
                 command.CommandType = CommandType.StoredProcedure '--CInt(op.Substring(3))                
                 command.Parameters.Add("USUARIO", iDB2DbType.iDB2VarChar, 10).Value = Usuario.ToString.Trim
-                command.Parameters.Add("CLAVE", iDB2DbType.iDB2VarChar, 32).Value = Clave.ToString.Trim
-                command.Parameters.Add("IDAPLIC", iDB2DbType.iDB2VarChar, 2).Value = TipAplic.ToString.Trim
+                command.Parameters.Add("CLAVE", iDB2DbType.iDB2VarChar, 32).Value = Clave.ToString.Trim                
 
                 cmd = command.ExecuteReader()
                 While (cmd.Read())

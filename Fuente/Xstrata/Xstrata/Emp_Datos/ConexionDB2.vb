@@ -8,7 +8,8 @@ Public Class ConexionDB2
         ' Obtiene la cadena de conexion desde el archivo de configuracion
         ' CONECTANDOME POR EL WEBCONFIG
         'Dim connectionString As String = ConfigurationManager.ConnectionStrings("Agencia").ConnectionString
-        Dim ConnectionString As String = "DataSource=RANSA; UserID=APPNETWARR;Password=TWR92RAR; DataCompression=True; DefaultCollection=DC@RNSLIB; Pooling=true "
+        'Dim ConnectionString As String = "DataSource=RANSA; UserID=APPNETWARR;Password=TWR92RAR; DataCompression=True; DefaultCollection=DC@RNSLIB; Pooling=true "
+        Dim ConnectionString As String = "DataSource=10.72.13.115; UserID=admper;Password=admper18; DataCompression=True; DefaultCollection=DC@RNSLIB; Pooling=true "
         ' Creando un nuevo objeto Conexion
         Dim connection As New iDB2Connection(connectionString)
         ' Abre la conneccion, and retorna este

@@ -3,8 +3,9 @@ Imports Emp_Entity
 
 Public Class NOrdenXTRATA
     Dim D As New Emp_Datos.DOrdenesXTRATA
-    Public Function Orden_Select(ByVal orden As String, ByVal Zona As String, ByVal cliente As String, ByVal fecha As String, ByVal fechaconcat As String, ByVal tipo As String)
-        Return D.Ordenes(orden, Zona, cliente, fecha, fechaconcat, tipo)
+    Public Function Orden_Select(ByVal orden As String, ByVal Zona As String, ByVal cliente As Integer, ByVal fecha As String, _
+                                 ByVal fechaconcat As String, ByVal tipo As String, ByVal Usuario As String)
+        Return D.Ordenes(orden, Zona, cliente, fecha, fechaconcat, tipo, Usuario)
     End Function
 
     Public Function FechasChekpoint_Insert(ByVal Edetalle As EOrdenXSTRATA) As String

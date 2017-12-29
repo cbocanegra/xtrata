@@ -4,19 +4,21 @@ Imports Emp_Negocio
 Partial Class FrmXstrata
     Inherits System.Web.UI.Page
 
-    Dim VALOR As Integer
+    'Dim VALOR As Integer
     Dim TIPOIMP As String = ""
     Dim DatOrdenes As String()
-    Dim Codcli As String = 3177
+    'Dim Codcli As String = 3177
     Dim strmensaje As String = ""
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
-            CargarOrdenes()
+            CargarZonas()
+            CargarClientes()
+            CargarOrdenes("", 0) 'Por defecto todas las zonas "", Cliente todos 0
         End If
     End Sub
 
-    Public Sub CargarOrdenes()
+    Public Sub CargarOrdenes(ByVal Zona As String, ByVal Cliente As Integer)
         Dim Negocio As New NOrdenXTRATA
         ' --- SACAR LOS HARD CODE Y PONERLOS EN VARIBALES---'
         '  Me.dgvOrden.DataSource = Negocio.Orden_Select(Me.txtOrden.Text, zona, VALOR, FormatoFecha(txtfecha.Text), FechaConcatenada(fechaactual1), TIPOIMP)
@@ -27,15 +29,15 @@ Partial Class FrmXstrata
         Else
             BuscaPeriodo = txtanio.Text.Trim & txtOrden.Text.Trim
         End If
-        Me.gridOServ.DataSource = Negocio.Orden_Select(BuscaPeriodo, Session.Item("SesionCodZona").ToString.Trim, VALOR, 0, 0, TIPOIMP)
+        Me.gridOServ.DataSource = Negocio.Orden_Select(BuscaPeriodo, Zona, Cliente, 0, 0, TIPOIMP, Session.Item("ValUsuario").ToString())
         gridOServ.DataBind()
         If gridOServ.Rows.Count > 0 Then
             Button2.Visible = True
-            Button1.Visible = True
+            'Button1.Visible = True
             OcultarGrillas()
         Else
             Button2.Visible = False
-            Button1.Visible = False
+            'Button1.Visible = False
             OcultarGrillas()
         End If
     End Sub
@@ -50,7 +52,7 @@ Partial Class FrmXstrata
         Me.Label3.Visible = False
         Me.Label4.Visible = False
         OcultarGrillas()
-        CargarOrdenes()
+        CargarOrdenes(Me.ddlZona.SelectedValue, Convert.ToInt32(Me.ddlCliente.SelectedValue))
     End Sub
 
     Protected Sub ibt_Click2(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs)
@@ -64,15 +66,21 @@ Partial Class FrmXstrata
         Dim rows As Integer
         strcodigo = (CType(sender, ImageButton)).CommandArgument
         DatOrdenes = Split(strcodigo, ",")
-        Session.Add("DatosPNNMOS", DatOrdenes(0).ToString.Trim)
-        Session.Add("DatosPNCDZO", DatOrdenes(1).ToString.Trim)
-        Session.Add("DatosDCTPOS", DatOrdenes(2).ToString.Trim)
+        Session.Add("DatosPNNMOS", DatOrdenes(0).ToString.Trim) 'Orden
+        Session.Add("DatosPNCDZO", DatOrdenes(1).ToString.Trim) 'Zona
+        Session.Add("DatosDCTPOS", DatOrdenes(2).ToString.Trim) 'Tipo
         Session.Add("DatosPNDCTR", DatOrdenes(3).ToString.Trim)
         Session.Add("DatosPCNMDC", DatOrdenes(4).ToString.Trim)
         Session.Add("DatosDDREGI", DatOrdenes(5).ToString.Trim)
         'Session.Add("CodInspect", DatInspector(3).ToString.Trim)
         'Session.Add("NomInspect", DatInspector(4).ToString.Trim)
 
+        Dim OrdenN As String = DatOrdenes(0).ToString.Trim
+        Dim codigoCliente As Integer = Convert.ToInt32(DatOrdenes(6))
+        Dim ZonaCod As String = DatOrdenes(1).ToString.Trim
+        Dim Tipo As String = DatOrdenes(2).ToString.Trim
+
+        hdCliente.Value = codigoCliente.ToString()
 
         For Each row As GridViewRow In gridOServ.Rows
             If gridOServ.DataKeys(row.RowIndex).Value = Nothing Then
@@ -198,22 +206,32 @@ Partial Class FrmXstrata
 
         Next
 
-        If Session.Item("DatosPNNMOS").ToString.Trim <> "" Then
-            CargarDetalle()
-            CargarCheckPoint()
-            CargarTotalCosto()
-            Me.Label2.Visible = True
-            Me.Label3.Visible = True
-            Me.Label4.Visible = True
-            btnDistribucion.Visible = True
-        End If
+        CargarDetalle(OrdenN, ZonaCod)
+        CargarCheckPoint(OrdenN, ZonaCod, codigoCliente.ToString())
+        CargarTotalCosto(OrdenN, ZonaCod, Tipo)
+        Me.Label2.Visible = True
+        Me.Label3.Visible = True
+        Me.Label4.Visible = True
+        btnDistribucion.Visible = True
+
+
+        'If Session.Item("DatosPNNMOS").ToString.Trim <> "" Then
+        '    CargarDetalle()
+        '    CargarCheckPoint()
+        '    CargarTotalCosto()
+        '    Me.Label2.Visible = True
+        '    Me.Label3.Visible = True
+        '    Me.Label4.Visible = True
+        '    btnDistribucion.Visible = True
+        'End If
     End Sub
 
-    Public Sub CargarDetalle()
+    Public Sub CargarDetalle(ByVal Orden As String, ByVal Zona As String)
         Dim Negocio As New NOrdenXTRATA
 
         If Session.Item("DatosPNCDZO").ToString.Trim <> "" Then
-            GdvDetalle.DataSource = Negocio.Orden_Select_Detalle(Session.Item("DatosPNNMOS").ToString.Trim, (Session.Item("DatosPNCDZO").ToString.Trim))
+            'GdvDetalle.DataSource = Negocio.Orden_Select_Detalle(Session.Item("DatosPNNMOS").ToString.Trim, (Session.Item("DatosPNCDZO").ToString.Trim))
+            GdvDetalle.DataSource = Negocio.Orden_Select_Detalle(Orden, Zona)
             GdvDetalle.DataBind()
             GdvDetalle.Visible = True
             ' Observacion = GridView2.GetRowCellValue(GridView2.FocusedRowHandle, "DCOBSE1")
@@ -221,10 +239,11 @@ Partial Class FrmXstrata
         End If
     End Sub
 
-    Public Sub CargarCheckPoint()
+    Public Sub CargarCheckPoint(ByVal Orden As String, ByVal Zona As String, ByVal CodCliente As String)
         Dim Negocio As New NOrdenXTRATA
         If Session.Item("DatosPNCDZO").ToString.Trim <> "" Then
-            Me.GdvChkPoint.DataSource = Negocio.Orden_CheckPoint(Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, Codcli)
+            'Me.GdvChkPoint.DataSource = Negocio.Orden_CheckPoint(Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, ddlCliente.SelectedValue)
+            Me.GdvChkPoint.DataSource = Negocio.Orden_CheckPoint(Orden, Zona, CodCliente)
             GdvChkPoint.DataBind()
             GdvChkPoint.Visible = True
             ' Observacion = GridView2.GetRowCellValue(GridView2.FocusedRowHandle, "DCOBSE1")
@@ -232,10 +251,11 @@ Partial Class FrmXstrata
         End If
     End Sub
 
-    Public Sub CargarTotalCosto()
+    Public Sub CargarTotalCosto(ByVal Orden As String, ByVal Zona As String, ByVal Tipo As String)
         If Session.Item("DatosDCTPOS").ToString.Trim <> "" Then
             Dim Negocio As New NOrdenXTRATA
-            GdvCostos.DataSource = Negocio.Orden_Costo(Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, Session.Item("DatosDCTPOS").ToString.Trim)
+            'GdvCostos.DataSource = Negocio.Orden_Costo(Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, Session.Item("DatosDCTPOS").ToString.Trim)
+            GdvCostos.DataSource = Negocio.Orden_Costo(Orden, Zona, Tipo)
             GdvCostos.DataBind()
             GdvCostos.Visible = True
             'GridView4.BestFitColumns()
@@ -250,7 +270,7 @@ Partial Class FrmXstrata
     End Sub
 
     Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click       
-        Consumir()
+        'Consumir()
     End Sub
 
     Protected Sub Button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -265,13 +285,13 @@ Partial Class FrmXstrata
         Me.Label4.Visible = False
         OcultarGrillas()
 
-        CargarOrdenes()
+        CargarOrdenes(Me.ddlZona.SelectedValue, Convert.ToInt32(Me.ddlCliente.SelectedValue))
     End Sub
 
     Protected Sub btnDistribucion_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnDistribucion.Click
         Dim Negocio As New NOrdenXTRATA
         Dim Resultado As String = ""
-        Resultado = Negocio.Distribucion_Costos(Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosDCTPOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, Codcli)
+        Resultado = Negocio.Distribucion_Costos(Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosDCTPOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, hdCliente.Value)
 
         If Resultado = "" Then
             ' MessageBox.Show("Se actualizo correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -281,43 +301,86 @@ Partial Class FrmXstrata
             ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
         End If
 
-        CargarTotalCosto()
-        Consumir()
+        'CargarTotalCosto()
+        'Consumir()
     End Sub
 
-    Public Sub Consumir()
-        Dim Negocio As New NOrdenXTRATA
-        Dim cadena As String
-        If Session.Item("DatosDCTPOS") IsNot Nothing Then
-            ' Cursor = System.Windows.Forms.Cursors.WaitCursor
-            If Session.Item("DatosPCNMDC").ToString.Trim <> "" Then
-                cadena = Negocio.Enviar_WebService_New(Codcli, Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, Session.Item("DatosPNDCTR").ToString.Trim, Session.Item("DatosPCNMDC").ToString.Trim, Session.Item("DatosDDREGI").ToString.Trim)
-                'cadena = Negocio.Enviar_WebService_New(Codcli, GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNNMOS"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNCDZO"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNDCTR"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PCNMDC"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "DDREGI"))
-                ' cadena = "Ok"
-                If cadena = "Ok" Then
-                    'MsgBox("N° Orden " & GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNNMOS") & " consumida satisfactoriamente", MsgBoxStyle.Exclamation, "Aviso")
-                    strmensaje = "<script type='text/javascript'>alert('Nro ORDEN     :  " & Session.Item("DatosPNNMOS").ToString.Trim & "   fue consumida satisfactoriamnete...');</script>"
-                    ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
-                Else
-                    'MsgBox(cadena, MsgBoxStyle.Information, "Aviso")
-                    strmensaje = "<script type='text/javascript'>alert('AVISO...   : " & cadena & " ');</script>"
-                    ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
+    'Public Sub Consumir()
+    '    Dim Negocio As New NOrdenXTRATA
+    '    Dim cadena As String
+    '    If Session.Item("DatosDCTPOS") IsNot Nothing Then
+    '        ' Cursor = System.Windows.Forms.Cursors.WaitCursor
+    '        If Session.Item("DatosPCNMDC").ToString.Trim <> "" Then
+    '            cadena = Negocio.Enviar_WebService_New(Codcli, Session.Item("DatosPNNMOS").ToString.Trim, Session.Item("DatosPNCDZO").ToString.Trim, Session.Item("DatosPNDCTR").ToString.Trim, Session.Item("DatosPCNMDC").ToString.Trim, Session.Item("DatosDDREGI").ToString.Trim)
+    '            'cadena = Negocio.Enviar_WebService_New(Codcli, GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNNMOS"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNCDZO"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNDCTR"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PCNMDC"), GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "DDREGI"))
+    '            ' cadena = "Ok"
+    '            If cadena = "Ok" Then
+    '                'MsgBox("N° Orden " & GridView1.GetRowCellValue(GridView1.FocusedRowHandle, "PNNMOS") & " consumida satisfactoriamente", MsgBoxStyle.Exclamation, "Aviso")
+    '                strmensaje = "<script type='text/javascript'>alert('Nro ORDEN     :  " & Session.Item("DatosPNNMOS").ToString.Trim & "   fue consumida satisfactoriamnete...');</script>"
+    '                ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
+    '            Else
+    '                'MsgBox(cadena, MsgBoxStyle.Information, "Aviso")
+    '                strmensaje = "<script type='text/javascript'>alert('AVISO...   : " & cadena & " ');</script>"
+    '                ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
 
-                End If
-            Else
-                'MsgBox("La Orden de Servicio no tiene BL", MsgBoxStyle.Exclamation, "Aviso")
-                strmensaje = "<script type='text/javascript'>alert('La Orden de Servicio no tiene BL..!!!');</script>"
-                ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
+    '            End If
+    '        Else
+    '            'MsgBox("La Orden de Servicio no tiene BL", MsgBoxStyle.Exclamation, "Aviso")
+    '            strmensaje = "<script type='text/javascript'>alert('La Orden de Servicio no tiene BL..!!!');</script>"
+    '            ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
+    '        End If
+
+    '        '  Cursor = System.Windows.Forms.Cursors.Arrow
+    '    Else
+    '        strmensaje = "<script type='text/javascript'>alert('Debe seleccionar registro para consumir...');</script>"
+    '        ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
+    '    End If
+    'End Sub
+
+    Protected Sub btnBusqueda_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btnBusqueda.Click
+        CargarOrdenes(Me.ddlZona.SelectedValue, Convert.ToInt32(Me.ddlCliente.SelectedValue))
+    End Sub
+
+    Private Sub CargarZonas()
+        'Dim Dat As Emp_Datos.DOrdenServ
+        If Session.Item("ValUsuario") <> Nothing Then
+
+            Dim ValUsuario As String = Session.Item("ValUsuario").ToString()
+
+            If ddlZona.Items.Count = 0 Then
+                With Me.ddlZona
+                    .DataTextField = "ZONA"
+                    .DataValueField = "CODZONA"
+                    .DataSource = Emp_Datos.DOrdenServ.ZonaUsuario(ValUsuario)
+                    .DataBind()
+                End With
+
+                ddlZona.Items.Insert(0, New ListItem("TODOS", ""))
+
             End If
 
-            '  Cursor = System.Windows.Forms.Cursors.Arrow
-        Else
-            strmensaje = "<script type='text/javascript'>alert('Debe seleccionar registro para consumir...');</script>"
-            ScriptManager.RegisterStartupScript(Me, Me.GetType, "alerta", strmensaje, False)
+        End If
+
+
+    End Sub
+
+    Private Sub CargarClientes()
+        If Session.Item("ValUsuario") <> Nothing Then
+
+            Dim ValUsuario As String = Session.Item("ValUsuario").ToString()
+
+            If ddlCliente.Items.Count = 0 Then
+                With Me.ddlCliente
+                    .DataTextField = "CODCLIENTE"
+                    .DataValueField = "CODCLIENTE"
+                    .DataSource = Emp_Datos.DOrdenServ.ClienteUsuario(ValUsuario)
+                    .DataBind()
+                End With
+            End If
+
+            ddlCliente.Items.Insert(0, New ListItem("TODOS", "0"))
+
         End If
     End Sub
 
-    Protected Sub btnBusqueda_Click(ByVal sender As Object, ByVal e As System.Web.UI.ImageClickEventArgs) Handles btnBusqueda.Click
-        CargarOrdenes()
-    End Sub
 End Class
